@@ -2,3 +2,6 @@ node_modules/
 data/
 config.json
 *.log
+# 测试残留的 curl cookie 文件（本地会话，非生产密钥，勿上传）
+jar.txt
+ujar.txt
