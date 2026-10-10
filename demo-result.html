@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>本命色 · 演示报告</title>
+  <style>:root {
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #1f2a44;
+  --muted: #6b7689;
+  --primary: #2b4c7e;
+  --primary-d: #1f3a63;
+  --accent: #e8a13a;
+  --ok: #2e9e6b;
+  --err: #d9534f;
+  --line: #e4e8f0;
+  --radius: 16px;
+  --shadow: 0 8px 30px rgba(31, 42, 68, 0.10);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px 18px 56px;
+  min-height: 100vh;
+}
+
+/* 顶栏 */
+.brand { text-align: center; margin-bottom: 22px; }
+.brand .logo {
+  width: 56px; height: 56px; border-radius: 18px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 700; font-size: 22px; box-shadow: var(--shadow);
+}
+.brand h1 { font-size: 20px; margin: 12px 0 2px; }
+.brand p { color: var(--muted); font-size: 13px; margin: 0; }
+
+/* 卡片 */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 22px;
+  margin-bottom: 18px;
+}
+.card h2 { font-size: 18px; margin: 0 0 6px; }
+.card .sub { color: var(--muted); font-size: 14px; margin: 0 0 20px; }
+
+/* 邀请码输入 */
+.code-row { display: flex; gap: 10px; }
+input[type="text"], input[type="password"], input[type="number"] {
+  flex: 1;
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: #fbfcfe;
+  color: var(--ink);
+  outline: none;
+  transition: border-color .15s;
+}
+input:focus { border-color: var(--primary); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 6px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background .15s, transform .05s;
+}
+.btn:active { transform: translateY(1px); }
+.btn.secondary { background: #eef1f7; color: var(--ink); }
+.btn.accent { background: var(--accent); color: #fff; }
+.btn:disabled { opacity: .55; cursor: default; }
+
+.msg { margin-top: 14px; font-size: 14px; min-height: 20px; }
+.msg.err { color: var(--err); }
+.msg.ok { color: var(--ok); }
+
+/* 进度 */
+.progress { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin-bottom: 22px; }
+.progress > i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width .25s; }
+.step-info { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+
+/* 题目 */
+.q-text { font-size: 18px; font-weight: 600; margin: 0 0 20px; }
+.options { display: flex; flex-direction: column; gap: 12px; }
+.opt {
+  text-align: left;
+  background: #fbfcfe;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex; align-items: center; gap: 12px;
+  transition: border-color .12s, background .12s;
+}
+.opt .radio {
+  flex: 0 0 22px; width: 22px; height: 22px; border-radius: 50%;
+  border: 2px solid var(--line); display: inline-flex; align-items: center; justify-content: center;
+  transition: border-color .12s, background .12s;
+}
+.opt.sel { border-color: var(--primary); background: #eef3fb; }
+.opt.sel .radio { border-color: var(--primary); background: var(--primary); box-shadow: inset 0 0 0 4px #fff; }
+
+.nav { display: flex; gap: 12px; margin-top: 24px; }
+.nav .btn { width: auto; flex: 1; }
+
+/* ============ 结果报告 ============ */
+.block-title { font-size: 16px; font-weight: 700; margin: 0 0 14px; }
+.block-sub { font-size: 13px; color: var(--muted); margin: 8px 0 8px; }
+.rep-card { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px 18px; margin-bottom: 16px; }
+
+.rep-head { text-align: center; border-left: 6px solid var(--primary); border-radius: 14px; background: var(--card); box-shadow: var(--shadow); padding: 24px 18px; margin-bottom: 16px; }
+.rep-season { display: inline-block; color: #fff; font-size: 13px; font-weight: 600; padding: 4px 14px; border-radius: 99px; margin-bottom: 10px; }
+.rep-name { font-size: 26px; font-weight: 800; }
+.rep-en { font-size: 13px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; }
+.rep-tag { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+/* 置信度 */
+.conf-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.conf-title { font-size: 15px; font-weight: 700; }
+.conf-badge { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 99px; background: #eef1f7; color: var(--muted); }
+.conf-high .conf-badge { background: #eaf6ef; color: var(--ok); }
+.conf-medium .conf-badge { background: #fef3e0; color: #c9821b; }
+.conf-low .conf-badge { background: #fbeaea; color: var(--err); }
+.conf-note { font-size: 14px; color: var(--ink); margin-top: 10px; }
+.conf-low .conf-note { color: var(--muted); }
+
+/* 维度条 */
+.rep-bar { margin-bottom: 16px; }
+.rb-label { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.rb-track { height: 10px; background: var(--line); border-radius: 99px; overflow: hidden; position: relative; }
+.rb-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); border-radius: 99px; }
+.rb-ends { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 4px; }
+.rb-val { font-size: 11px; color: var(--muted); text-align: right; margin-top: 2px; }
+.rep-desc { font-size: 14px; color: var(--ink); margin-top: 10px; }
+
+/* 候选季型切换 */
+.cands { display: flex; flex-direction: column; gap: 10px; }
+.cand { display: flex; align-items: center; gap: 12px; padding: 12px; border: 2px solid var(--line); border-radius: 12px; cursor: pointer; transition: border-color .12s, background .12s; }
+.cand.on { border-color: var(--primary); background: #eef3fb; }
+.cand-rank { flex: 0 0 22px; width: 22px; height: 22px; border-radius: 50%; background: var(--line); color: var(--muted); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.cand-rank.top { background: var(--primary); color: #fff; }
+.cand-main { flex: 1; }
+.cand-name { font-size: 15px; font-weight: 700; }
+.cand-bar { height: 6px; background: var(--line); border-radius: 99px; overflow: hidden; margin-top: 6px; }
+.cand-fill { height: 100%; border-radius: 99px; }
+.cand-pct { font-size: 14px; font-weight: 700; color: var(--ink); }
+.cand-note { font-size: 13px; color: var(--muted); margin-top: 10px; }
+
+.kv-mini { font-size: 14px; color: var(--ink); margin-top: 12px; }
+.rep-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; margin-top: 12px; }
+.rm { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; border-bottom: 1px dashed var(--line); padding-bottom: 6px; }
+.rm span { color: var(--muted); }
+.rm b { font-weight: 600; text-align: right; }
+
+/* 色块 */
+.range-group { margin-bottom: 14px; }
+.range-label { font-size: 13px; color: var(--muted); margin-bottom: 8px; font-weight: 600; }
+.swatches { display: flex; flex-wrap: wrap; gap: 10px; }
+.swatches.compact { gap: 8px; }
+.sw { display: flex; flex-direction: column; align-items: center; width: 56px; }
+.sw.no { width: 48px; }
+.chip { width: 40px; height: 40px; border-radius: 10px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.06); }
+.chip-no { opacity: .8; box-shadow: inset 0 0 0 2px rgba(217,83,79,.4); }
+.nm { font-size: 11px; color: var(--ink); margin-top: 5px; text-align: center; line-height: 1.2; }
+.chip-muted { color: var(--muted); }
+
+/* 服装行 */
+.cloth-row { margin-bottom: 12px; }
+.cloth-label { font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.cloth-label.cautious { color: #c9821b; }
+.cloth-label.avoid { color: var(--err); }
+
+/* 发色网格 */
+.hair-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.hair-item { display: flex; align-items: center; gap: 8px; background: #fbfcfe; border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; }
+.hair-item .chip { width: 26px; height: 26px; border-radius: 50%; }
+
+/* 妆容行 */
+.makeup-row { display: flex; gap: 12px; font-size: 14px; padding: 7px 0; border-bottom: 1px dashed var(--line); }
+.mk-label { flex: 0 0 84px; color: var(--muted); }
+.mk-val { flex: 1; }
+
+/* 配饰金属 */
+.metal-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.metal-item { display: flex; align-items: center; gap: 8px; background: #fbfcfe; border: 1px solid var(--line); border-radius: 10px; padding: 6px 12px; }
+.mchip { width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg,#d9d9d9,#9a9a9a); box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
+
+/* 气质关键词 */
+.kw-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.kw { font-size: 13px; background: #eef3fb; color: var(--primary); padding: 6px 12px; border-radius: 99px; }
+.style-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.style-tag { font-size: 13px; background: #f3f5fa; color: var(--ink); padding: 6px 12px; border-radius: 8px; }
+
+/* 管理后台 */
+.table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.table th, .table td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+.table th { color: var(--muted); font-weight: 600; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 12px; }
+.pill.u0 { background: #eaf6ef; color: var(--ok); }
+.pill.u1 { background: #fbeaea; color: var(--err); }
+.code-cell { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 1px; }
+.row-actions { display: flex; gap: 8px; }
+.mini { padding: 6px 10px; font-size: 13px; border-radius: 8px; width: auto; }
+.stat { display: flex; gap: 18px; margin: 4px 0 18px; }
+.stat b { font-size: 20px; }
+.muted { color: var(--muted); font-size: 13px; }
+.kv { font-family: ui-monospace, Menlo, Consolas, monospace; background: #f3f5fa; border:1px dashed var(--line); border-radius:10px; padding:12px; word-break: break-all; }
+.spinner { opacity: .6; }
+
+@media (min-width: 600px) {
+  .wrap { padding-top: 40px; }
+  .card { padding: 32px 30px; }
+}
+
+  .topbar{text-align:center;color:#6b7689;font-size:13px;padding:14px}</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">演示报告（静态，候选季型可点击切换 · 真实算法输出）</div>
+    <div id="resBody"></div>
+  </div>
+  <script>/*
+ * 报告渲染（纯函数，浏览器与 Node 通用）。
+ * reportHTML(result, activeVariant) 返回完整报告的 HTML 字符串。
+ * 浏览器端 app.js 用它设置 innerHTML；Node 端 gen_demo.js 用它生成静态预览。
+ */
+(function (global) {
+  'use strict';
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function swatchesHTML(arr, opts) {
+    opts = opts || {};
+    const cls = 'sw' + (opts.avoid ? ' no' : '');
+    return (arr || []).map(c =>
+      `<div class="${cls}"><span class="chip${opts.avoid ? ' chip-no' : ''}" style="background:${esc(c.hex)}"></span>` +
+      `<span class="nm${opts.muted ? ' chip-muted' : ''}">${esc(c.name)}</span></div>`
+    ).join('');
+  }
+
+  function clothRows(colors, label, kind) {
+    if (!colors || !colors.length) return '';
+    const cls = kind === 'avoid' ? 'cloth-label avoid' : (kind === 'cautious' ? 'cloth-label cautious' : 'cloth-label');
+    return `<div class="cloth-row"><div class="${cls}">${label}</div>` +
+      `<div class="swatches compact">${swatchesHTML(colors, { avoid: kind === 'avoid', muted: kind === 'avoid' })}</div></div>`;
+  }
+
+  function colorGroup(label, arr) {
+    if (!arr || !arr.length) return '';
+    return `<div class="range-group"><div class="range-label">${esc(label)}</div>` +
+      `<div class="swatches compact">${swatchesHTML(arr)}</div></div>`;
+  }
+
+  function mkRow(label, val) {
+    return `<div class="makeup-row"><span class="mk-label">${esc(label)}</span><span class="mk-val">${esc(val || '')}</span></div>`;
+  }
+
+  function metalGroup(label, arr) {
+    if (!arr || !arr.length) return '';
+    return `<div class="range-label" style="margin-top:10px">${esc(label)}</div>` +
+      `<div class="metal-grid">${arr.map(m => `<div class="metal-item"><span class="mchip"></span><span class="nm">${esc(m.name)}</span></div>`).join('')}</div>`;
+  }
+
+  function barRow(label, val, left, right) {
+    val = val || 0;
+    return `<div class="rep-bar"><div class="rb-label">${esc(label)}</div>` +
+      `<div class="rb-track"><div class="rb-fill" style="width:${val}%"></div></div>` +
+      `<div class="rb-ends"><span>${esc(left)}</span><span>${esc(right)}</span></div>` +
+      `<div class="rb-val">${val}</div></div>`;
+  }
+
+  function reportHTML(r, activeVariant) {
+    if (!r) return '<div class="rep-card">暂无结果</div>';
+    activeVariant = activeVariant || 0;
+    const v = (r.variants && r.variants.length) ? r.variants[activeVariant] : r;
+    const theme = v.theme || r.theme || '#2b4c7e';
+    let html = '';
+
+    // 头部
+    html += `<div class="rep-head" style="border-left-color:${theme}">` +
+      `<div class="rep-season" style="background:${theme}">${esc(v.season)}季型</div>` +
+      `<div class="rep-name">${esc(v.name)}</div>` +
+      `<div class="rep-en">${esc(v.seasonEn || '')}</div>` +
+      `<div class="rep-tag">${esc(v.tagline || '')}</div></div>`;
+
+    // 置信度卡
+    const lvlText = { high: '高', medium: '中', low: '低' }[r.confidenceLevel] || '';
+    html += `<div class="rep-card conf conf-${r.confidenceLevel}">` +
+      `<div class="conf-head"><span class="conf-title">结论可靠度</span>` +
+      `<span class="conf-badge">置信度 ${esc(r.confidencePercent)}（${lvlText}）</span></div>` +
+      `<div class="conf-note">${esc(r.verdictNote || '')}</div></div>`;
+
+    // 维度条
+    const bars = r.bars || {};
+    html += `<div class="rep-card"><div class="block-title">你的色彩维度</div>` +
+      barRow('冷暖（T）', bars.temp, '冷', '暖') +
+      barRow('明度（V）', bars.value, '深', '浅') +
+      barRow('纯度（C）', bars.chroma, '柔', '鲜') +
+      (r.directionText ? `<div class="rep-desc">倾向：${esc(r.directionText)}</div>` : '') +
+      `</div>`;
+
+    // 候选季型切换
+    if (r.candidates && r.candidates.length > 1) {
+      html += `<div class="rep-card"><div class="block-title">可能的季型（按准确率排序）</div><div class="cands">` +
+        r.candidates.map((c, i) =>
+          `<div class="cand ${i === activeVariant ? 'on' : ''}" data-vi="${i}">` +
+          `<div class="cand-rank ${i === 0 ? 'top' : ''}">${i + 1}</div>` +
+          `<div class="cand-main"><div class="cand-name" style="color:${esc(c.theme)}">${esc(c.name)}</div>` +
+          `<div class="cand-bar"><div class="cand-fill" style="width:${c.percent}%;background:${esc(c.theme)}"></div></div></div>` +
+          `<div class="cand-pct">${esc(c.percentText || (c.percent + '%'))}</div></div>`
+        ).join('') +
+        `</div>` +
+        (r.diffDimLabel ? `<div class="cand-note">两者差异主要在「${esc(r.diffDimLabel)}」上，可对照肤色再确认。</div>` : '') +
+        `</div>`;
+    }
+
+    // 分析
+    html += `<div class="rep-card"><div class="block-title">分析</div>` +
+      `<div class="rep-desc">${esc(v.description || '')}</div>` +
+      `<div class="kv-mini">肤色冷暖调：${esc(v.skinTone || '')}</div>`;
+    if (v.analysis) {
+      html += `<div class="rep-metrics">` +
+        `<div class="rm"><span>肤色明度</span><b>${esc(v.analysis.skinBrightness)}</b></div>` +
+        `<div class="rm"><span>肤色饱和度</span><b>${esc(v.analysis.skinSaturation)}</b></div>` +
+        `<div class="rm"><span>五官对比度</span><b>${esc(v.analysis.contrast)}</b></div>` +
+        `<div class="rm"><span>发色/瞳孔</span><b>${esc(v.analysis.hairAndPupil)}</b></div>` +
+        `</div>`;
+    }
+    html += `</div>`;
+
+    // 色彩范围
+    if (v.colorRange) {
+      html += `<div class="rep-card"><div class="block-title">适合你的色彩范围</div>` +
+        colorGroup('基础色（中性色）', v.colorRange.basics) +
+        colorGroup('主色', v.colorRange.main) +
+        colorGroup('点缀色', v.colorRange.accents) + `</div>`;
+    }
+
+    // 服装颜色推荐
+    if (v.clothingColors) {
+      html += `<div class="rep-card"><div class="block-title">服装颜色推荐</div>` +
+        clothRows(v.clothingColors.priority, '优先选择', 'priority') +
+        clothRows(v.clothingColors.try, '可以尝试', 'try') +
+        clothRows(v.clothingColors.cautious, '谨慎选择', 'cautious') +
+        clothRows(v.clothingColors.avoid, '尽量避免', 'avoid') + `</div>`;
+    }
+
+    // 发色方向
+    if (v.hairColor) {
+      html += `<div class="rep-card"><div class="block-title">发色方向</div>` +
+        `<div class="rep-desc">${esc(v.hairColor.note || '')}</div>` +
+        `<div class="hair-grid">${(v.hairColor.colors || []).map(c =>
+          `<div class="hair-item"><span class="chip" style="background:${esc(c.hex)}"></span><span class="nm">${esc(c.name)}</span></div>`).join('')}</div></div>`;
+    }
+
+    // 最显白颜色
+    if (v.whiteningColors) {
+      html += `<div class="rep-card"><div class="block-title">最显白颜色（提亮肤色）</div>` +
+        `<div class="rep-desc">${esc(v.whiteningColors.reason || '')}</div>` +
+        `<div class="swatches compact">${swatchesHTML(v.whiteningColors.colors)}</div></div>`;
+    }
+
+    // 妆容
+    if (v.makeup) {
+      html += `<div class="rep-card"><div class="block-title">妆容颜色推荐</div>` +
+        mkRow('底妆', v.makeup.base) + mkRow('腮红', v.makeup.blush) +
+        mkRow('眼影', v.makeup.eyeshadow) + mkRow('眼线', v.makeup.eyeliner) +
+        mkRow('口红方向', v.makeup.lipstick) + `</div>`;
+    }
+
+    // 配饰金属
+    if (v.metals) {
+      html += `<div class="rep-card"><div class="block-title">配饰金属</div>` +
+        metalGroup('优先选择', v.metals.priority) +
+        metalGroup('可少量搭配', v.metals.optional) + `</div>`;
+    }
+
+    // 显脏显黑
+    if (v.dirtyColors) {
+      html += `<div class="rep-card"><div class="block-title">最容易显脏显黑的颜色</div>` +
+        `<div class="rep-desc">${esc(v.dirtyColors.reason || '')}</div>` +
+        `<div class="swatches compact">${swatchesHTML(v.dirtyColors.colors, { avoid: true, muted: true })}</div></div>`;
+    }
+
+    // 气质关键词 + 风格
+    if (v.styleKeywords && v.styleKeywords.length) {
+      html += `<div class="rep-card"><div class="block-title">我的整体气质关键词</div>` +
+        `<div class="kw-list">${v.styleKeywords.map(k => `<span class="kw">${esc(k)}</span>`).join('')}</div>` +
+        (v.styles && v.styles.length ? `<div class="block-sub">适合走</div><div class="style-list">${v.styles.map(s => `<span class="style-tag">${esc(s)}</span>`).join('')}</div>` : '') +
+        `</div>`;
+    }
+
+    return html;
+  }
+
+  if (typeof module !== 'undefined' && module.exports) module.exports = { reportHTML };
+  if (global) global.ReportHTML = reportHTML;
+})(typeof window !== 'undefined' ? window : (typeof globalThis !== 'undefined' ? globalThis : this));
+</script>
+  <script>
+    var RESULT = {"id":"soft_spring","name":"柔春型","season":"春","seasonEn":"Soft Spring","tagline":"温柔雾感的暖调知性美","seasonFeature":"温柔的暖调莫兰迪","colorAttributes":"暖 / 中高明度 / 中低彩度 / 浊","repColors":["杏色","浅橙棕","浅橄榄绿","米白色"],"celebrities":"韩孝周 / 晚晚 / 朴宝英","description":"你是被薄雾柔化的春天，暖而低饱和。灰调暖色比纯色更衬你，过于鲜亮的颜色反而显得突兀。","traits":{"temp":"暖","value":"中高","chroma":"中低","clarity":"浊","contrast":"低"},"palette":{"best":[{"hex":"#E3C3C0","name":"灰粉"},{"hex":"#D8C3A5","name":"奶茶"},{"hex":"#A3B18A","name":"雾绿"},{"hex":"#C2B280","name":"浅驼"},{"hex":"#B7A98B","name":"暖灰"},{"hex":"#C89B9B","name":"干枯玫瑰"},{"hex":"#E8D5B7","name":"米杏"},{"hex":"#A9BEC9","name":"雾蓝"}],"clothingTip":"适合低饱和的暖灰、奶茶、雾绿，柔和不抢眼最显气质。","lipstick":[{"hex":"#C98986","name":"玫瑰豆沙"},{"hex":"#B98C8C","name":"干枯玫瑰"},{"hex":"#C19A8B","name":"蜜茶"}],"avoid":[{"hex":"#000000","name":"正黑"},{"hex":"#FFD400","name":"鲜黄"},{"hex":"#FF8C42","name":"亮橘"},{"hex":"#2C3E50","name":"冷蓝"}]},"skinTone":"暖调偏柔/中性暖调","analysis":{"skinBrightness":"中偏浅","skinSaturation":"低-中低饱和","contrast":"低对比","hairAndPupil":"偏暖棕发 / 柔和深棕瞳"},"colorRange":{"basics":[{"hex":"#F5F0E6","name":"米白"},{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#E8DCC8","name":"浅卡其"},{"hex":"#E6D0B3","name":"浅驼"},{"hex":"#D9D1C5","name":"暖灰"}],"main":[{"hex":"#E3C3C0","name":"灰粉"},{"hex":"#D8C3A5","name":"奶茶"},{"hex":"#A3B18A","name":"雾绿"},{"hex":"#C2B280","name":"浅驼"},{"hex":"#B7A98B","name":"暖灰"}],"accents":[{"hex":"#C89B9B","name":"干枯玫瑰"},{"hex":"#E8D5B7","name":"米杏"},{"hex":"#A9BEC9","name":"雾蓝"}]},"clothingColors":{"priority":[{"hex":"#E3C3C0","name":"灰粉"},{"hex":"#D8C3A5","name":"奶茶"},{"hex":"#A3B18A","name":"雾绿"},{"hex":"#C2B280","name":"浅驼"}],"try":[{"hex":"#B7A98B","name":"暖灰"},{"hex":"#C89B9B","name":"干枯玫瑰"},{"hex":"#E8D5B7","name":"米杏"},{"hex":"#A9BEC9","name":"雾蓝"}],"cautious":[{"hex":"#95A5B5","name":"冷灰蓝"},{"hex":"#B0A2BD","name":"雾紫"},{"hex":"#C08FA0","name":"灰玫"},{"hex":"#1F3A5F","name":"深海军"}],"avoid":[{"hex":"#111111","name":"纯黑"},{"hex":"#BFE3F0","name":"冰蓝"},{"hex":"#0033A0","name":"宝蓝"},{"hex":"#FF5FA2","name":"荧光粉"}]},"hairColor":{"colors":[{"hex":"#8B6B4F","name":"暖棕"},{"hex":"#A67C52","name":"金棕"},{"hex":"#C19A6B","name":"榛果棕"},{"hex":"#C08656","name":"焦糖棕"},{"hex":"#7A5C44","name":"巧克力棕"}],"note":"暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"},"whiteningColors":{"reason":"偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气","colors":[{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#FCE3A3","name":"淡鹅黄"},{"hex":"#F6C1B3","name":"蜜桃粉"}]},"makeup":{"base":"暖调清透，自然光泽感","blush":"蜜桃 / 珊瑚 / 杏橘","eyeshadow":"暖棕 / 杏色 / 浅橄榄 / 金棕","eyeliner":"深棕 / 暖灰棕","lipstick":"珊瑚 / 暖橘 / 南瓜 / 豆沙红"},"metals":{"priority":[{"name":"金色"},{"name":"玫瑰金"},{"name":"铜色"}],"optional":[{"name":"白金"},{"name":"暖珍珠"}]},"dirtyColors":{"reason":"冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神","colors":[{"hex":"#111111","name":"纯黑"},{"hex":"#BFE3F0","name":"冰蓝"},{"hex":"#0033A0","name":"宝蓝"},{"hex":"#FF5FA2","name":"荧光粉"}]},"styleKeywords":["明媚元气","清新活力","温暖少女感","透亮清甜"],"styles":["韩系清新","甜美通勤","度假休闲风","轻法式"],"hairPupilColors":[{"hex":"#8B6B4F","name":"暖棕发"},{"hex":"#5C4033","name":"深棕发"},{"hex":"#3A2E28","name":"深褐瞳"}],"dims":{"T":1.5,"V":0.6692957746478871,"C":-0.7416666666666667,"consistency":1},"bars":{"temp":100,"value":72,"chroma":13},"theme":"#e6b54e","confidence":0.5532658354829365,"confidencePercent":"55%","confidenceLevel":"medium","consistency":1,"seasonTheme":{"春":"#e6b54e","夏":"#7fa8c9","秋":"#c17a3f","冬":"#6c5ce7"},"seasonLabel":"春季型","verdict":"two","verdictHeadline":"你最可能是 柔春型（55%），其次是 浅春型（45%）","verdictNote":"两者主要在「明度」上分野：若你更偏深（明度低），偏向 柔春型；更偏浅（明度高），偏向 浅春型。","primaryId":"soft_spring","secondaryId":"light_spring","tentative":false,"accuracyPercent":"55%","directionText":"","candidates":[{"id":"soft_spring","name":"柔春型","season":"春","seasonEn":"Soft Spring","theme":"#e6b54e","percent":55,"percentText":"55%"},{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","theme":"#e6b54e","percent":45,"percentText":"45%"}],"alternate":{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","theme":"#e6b54e","percent":45,"percentText":"45%"},"diffDimLabel":"明度","variants":[{"id":"soft_spring","name":"柔春型","season":"春","seasonEn":"Soft Spring","tagline":"温柔雾感的暖调知性美","seasonFeature":"温柔的暖调莫兰迪","colorAttributes":"暖 / 中高明度 / 中低彩度 / 浊","repColors":["杏色","浅橙棕","浅橄榄绿","米白色"],"celebrities":"韩孝周 / 晚晚 / 朴宝英","description":"你是被薄雾柔化的春天，暖而低饱和。灰调暖色比纯色更衬你，过于鲜亮的颜色反而显得突兀。","traits":{"temp":"暖","value":"中高","chroma":"中低","clarity":"浊","contrast":"低"},"palette":{"best":[{"hex":"#E3C3C0","name":"灰粉"},{"hex":"#D8C3A5","name":"奶茶"},{"hex":"#A3B18A","name":"雾绿"},{"hex":"#C2B280","name":"浅驼"},{"hex":"#B7A98B","name":"暖灰"},{"hex":"#C89B9B","name":"干枯玫瑰"},{"hex":"#E8D5B7","name":"米杏"},{"hex":"#A9BEC9","name":"雾蓝"}],"clothingTip":"适合低饱和的暖灰、奶茶、雾绿，柔和不抢眼最显气质。","lipstick":[{"hex":"#C98986","name":"玫瑰豆沙"},{"hex":"#B98C8C","name":"干枯玫瑰"},{"hex":"#C19A8B","name":"蜜茶"}],"avoid":[{"hex":"#000000","name":"正黑"},{"hex":"#FFD400","name":"鲜黄"},{"hex":"#FF8C42","name":"亮橘"},{"hex":"#2C3E50","name":"冷蓝"}]},"skinTone":"暖调偏柔/中性暖调","analysis":{"skinBrightness":"中偏浅","skinSaturation":"低-中低饱和","contrast":"低对比","hairAndPupil":"偏暖棕发 / 柔和深棕瞳"},"colorRange":{"basics":[{"hex":"#F5F0E6","name":"米白"},{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#E8DCC8","name":"浅卡其"},{"hex":"#E6D0B3","name":"浅驼"},{"hex":"#D9D1C5","name":"暖灰"}],"main":[{"hex":"#E3C3C0","name":"灰粉"},{"hex":"#D8C3A5","name":"奶茶"},{"hex":"#A3B18A","name":"雾绿"},{"hex":"#C2B280","name":"浅驼"},{"hex":"#B7A98B","name":"暖灰"}],"accents":[{"hex":"#C89B9B","name":"干枯玫瑰"},{"hex":"#E8D5B7","name":"米杏"},{"hex":"#A9BEC9","name":"雾蓝"}]},"clothingColors":{"priority":[{"hex":"#E3C3C0","name":"灰粉"},{"hex":"#D8C3A5","name":"奶茶"},{"hex":"#A3B18A","name":"雾绿"},{"hex":"#C2B280","name":"浅驼"}],"try":[{"hex":"#B7A98B","name":"暖灰"},{"hex":"#C89B9B","name":"干枯玫瑰"},{"hex":"#E8D5B7","name":"米杏"},{"hex":"#A9BEC9","name":"雾蓝"}],"cautious":[{"hex":"#95A5B5","name":"冷灰蓝"},{"hex":"#B0A2BD","name":"雾紫"},{"hex":"#C08FA0","name":"灰玫"},{"hex":"#1F3A5F","name":"深海军"}],"avoid":[{"hex":"#111111","name":"纯黑"},{"hex":"#BFE3F0","name":"冰蓝"},{"hex":"#0033A0","name":"宝蓝"},{"hex":"#FF5FA2","name":"荧光粉"}]},"hairColor":{"colors":[{"hex":"#8B6B4F","name":"暖棕"},{"hex":"#A67C52","name":"金棕"},{"hex":"#C19A6B","name":"榛果棕"},{"hex":"#C08656","name":"焦糖棕"},{"hex":"#7A5C44","name":"巧克力棕"}],"note":"暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"},"whiteningColors":{"reason":"偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气","colors":[{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#FCE3A3","name":"淡鹅黄"},{"hex":"#F6C1B3","name":"蜜桃粉"}]},"makeup":{"base":"暖调清透，自然光泽感","blush":"蜜桃 / 珊瑚 / 杏橘","eyeshadow":"暖棕 / 杏色 / 浅橄榄 / 金棕","eyeliner":"深棕 / 暖灰棕","lipstick":"珊瑚 / 暖橘 / 南瓜 / 豆沙红"},"metals":{"priority":[{"name":"金色"},{"name":"玫瑰金"},{"name":"铜色"}],"optional":[{"name":"白金"},{"name":"暖珍珠"}]},"dirtyColors":{"reason":"冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神","colors":[{"hex":"#111111","name":"纯黑"},{"hex":"#BFE3F0","name":"冰蓝"},{"hex":"#0033A0","name":"宝蓝"},{"hex":"#FF5FA2","name":"荧光粉"}]},"styleKeywords":["明媚元气","清新活力","温暖少女感","透亮清甜"],"styles":["韩系清新","甜美通勤","度假休闲风","轻法式"],"hairPupilColors":[{"hex":"#8B6B4F","name":"暖棕发"},{"hex":"#5C4033","name":"深棕发"},{"hex":"#3A2E28","name":"深褐瞳"}],"dims":{"T":1.5,"V":0.6692957746478871,"C":-0.7416666666666667,"consistency":1},"bars":{"temp":100,"value":72,"chroma":13},"theme":"#e6b54e","confidence":0.5532658354829365,"confidencePercent":"55%","confidenceLevel":"medium","consistency":1,"seasonTheme":{"春":"#e6b54e","夏":"#7fa8c9","秋":"#c17a3f","冬":"#6c5ce7"},"seasonLabel":"春季型","verdict":"two","verdictHeadline":"你最可能是 柔春型（55%），其次是 浅春型（45%）","verdictNote":"两者主要在「明度」上分野：若你更偏深（明度低），偏向 柔春型；更偏浅（明度高），偏向 浅春型。","primaryId":"soft_spring","secondaryId":"light_spring","tentative":false,"accuracyPercent":"55%","directionText":"","candidates":[{"id":"soft_spring","name":"柔春型","season":"春","seasonEn":"Soft Spring","theme":"#e6b54e","percent":55,"percentText":"55%"},{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","theme":"#e6b54e","percent":45,"percentText":"45%"}],"alternate":{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","theme":"#e6b54e","percent":45,"percentText":"45%"},"diffDimLabel":"明度","variantIndex":0,"variantPercent":"55%","variantPercentNum":55,"isPrimaryVariant":true},{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","tagline":"轻盈明亮的暖调少女感","seasonFeature":"5月 联想到樱花和木兰花","colorAttributes":"暖 / 高明度 / 中低彩度 / 清","repColors":["草绿色","淡鹅黄","珊瑚粉","蒂芙尼蓝"],"celebrities":"林允儿 / 赵露思 / 宋慧乔","description":"你是春日初融的暖光，明度高、色调清新。柔和的暖色让你显得元气又干净，避免过重过冷的颜色。","traits":{"temp":"暖","value":"高","chroma":"中低","clarity":"清","contrast":"中低"},"palette":{"best":[{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#F6C1B3","name":"蜜桃粉"},{"hex":"#FCE3A3","name":"淡鹅黄"},{"hex":"#BFE3C9","name":"薄荷绿"},{"hex":"#BFDAE0","name":"浅雾蓝"},{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F8B4A8","name":"浅珊瑚"}],"clothingTip":"适合奶白、浅杏、淡粉、薄荷绿等轻盈暖色，材质选柔软通透的棉麻、雪纺更出彩。","lipstick":[{"hex":"#F7A8A0","name":"珊瑚粉"},{"hex":"#F2B5A0","name":"蜜桃"},{"hex":"#F5B8B0","name":"淡橘粉"}],"avoid":[{"hex":"#000000","name":"正黑"},{"hex":"#1B2A4A","name":"深海军蓝"},{"hex":"#C0386B","name":"冷玫红"},{"hex":"#6E5B4F","name":"灰褐"}]},"skinTone":"暖调偏柔/中性暖调","analysis":{"skinBrightness":"偏高/高明度","skinSaturation":"低-中低饱和","contrast":"低-中对比","hairAndPupil":"偏暖棕发 / 柔和深棕瞳"},"colorRange":{"basics":[{"hex":"#F5F0E6","name":"米白"},{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#E8DCC8","name":"浅卡其"},{"hex":"#E6D0B3","name":"浅驼"},{"hex":"#D9D1C5","name":"暖灰"}],"main":[{"hex":"#F6C1B3","name":"蜜桃粉"},{"hex":"#FCE3A3","name":"淡鹅黄"},{"hex":"#BFE3C9","name":"薄荷绿"},{"hex":"#BFDAE0","name":"浅雾蓝"},{"hex":"#F8B4A8","name":"浅珊瑚"}],"accents":[]},"clothingColors":{"priority":[{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#F6C1B3","name":"蜜桃粉"},{"hex":"#FCE3A3","name":"淡鹅黄"},{"hex":"#BFE3C9","name":"薄荷绿"}],"try":[{"hex":"#BFDAE0","name":"浅雾蓝"},{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F8B4A8","name":"浅珊瑚"}],"cautious":[{"hex":"#95A5B5","name":"冷灰蓝"},{"hex":"#B0A2BD","name":"雾紫"},{"hex":"#C08FA0","name":"灰玫"},{"hex":"#1F3A5F","name":"深海军"}],"avoid":[{"hex":"#111111","name":"纯黑"},{"hex":"#BFE3F0","name":"冰蓝"},{"hex":"#0033A0","name":"宝蓝"},{"hex":"#FF5FA2","name":"荧光粉"}]},"hairColor":{"colors":[{"hex":"#8B6B4F","name":"暖棕"},{"hex":"#A67C52","name":"金棕"},{"hex":"#C19A6B","name":"榛果棕"},{"hex":"#C08656","name":"焦糖棕"},{"hex":"#7A5C44","name":"巧克力棕"}],"note":"暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"},"whiteningColors":{"reason":"偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气","colors":[{"hex":"#FBF3E4","name":"奶油白"},{"hex":"#F7D9B8","name":"浅杏"},{"hex":"#FCE3A3","name":"淡鹅黄"},{"hex":"#F6C1B3","name":"蜜桃粉"}]},"makeup":{"base":"暖调清透，自然光泽感","blush":"蜜桃 / 珊瑚 / 杏橘","eyeshadow":"暖棕 / 杏色 / 浅橄榄 / 金棕","eyeliner":"深棕 / 暖灰棕","lipstick":"珊瑚 / 暖橘 / 南瓜 / 豆沙红"},"metals":{"priority":[{"name":"金色"},{"name":"玫瑰金"},{"name":"铜色"}],"optional":[{"name":"白金"},{"name":"暖珍珠"}]},"dirtyColors":{"reason":"冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神","colors":[{"hex":"#111111","name":"纯黑"},{"hex":"#BFE3F0","name":"冰蓝"},{"hex":"#0033A0","name":"宝蓝"},{"hex":"#FF5FA2","name":"荧光粉"}]},"styleKeywords":["明媚元气","清新活力","温暖少女感","透亮清甜"],"styles":["韩系清新","甜美通勤","度假休闲风","轻法式"],"hairPupilColors":[{"hex":"#8B6B4F","name":"暖棕发"},{"hex":"#5C4033","name":"深棕发"},{"hex":"#3A2E28","name":"深褐瞳"}],"dims":{"T":1.5,"V":0.6692957746478871,"C":-0.7416666666666667,"consistency":1},"bars":{"temp":100,"value":72,"chroma":13},"theme":"#e6b54e","confidence":0.5532658354829365,"confidencePercent":"55%","confidenceLevel":"medium","consistency":1,"seasonTheme":{"春":"#e6b54e","夏":"#7fa8c9","秋":"#c17a3f","冬":"#6c5ce7"},"seasonLabel":"春季型","verdict":"two","verdictHeadline":"你最可能是 柔春型（55%），其次是 浅春型（45%）","verdictNote":"两者主要在「明度」上分野：若你更偏深（明度低），偏向 柔春型；更偏浅（明度高），偏向 浅春型。","primaryId":"soft_spring","secondaryId":"light_spring","tentative":false,"accuracyPercent":"55%","directionText":"","candidates":[{"id":"soft_spring","name":"柔春型","season":"春","seasonEn":"Soft Spring","theme":"#e6b54e","percent":55,"percentText":"55%"},{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","theme":"#e6b54e","percent":45,"percentText":"45%"}],"alternate":{"id":"light_spring","name":"浅春型","season":"春","seasonEn":"Light Spring","theme":"#e6b54e","percent":45,"percentText":"45%"},"diffDimLabel":"明度","variantIndex":1,"variantPercent":"45%","variantPercentNum":45,"isPrimaryVariant":false}],"variantCount":2};
+    var AV = 0;
+    function render() {
+      document.getElementById('resBody').innerHTML = ReportHTML(RESULT, AV);
+      document.querySelectorAll('#resBody .cand').forEach(function (el) {
+        el.onclick = function () { AV = +el.getAttribute('data-vi'); render(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+      });
+    }
+    render();
+  </script>
+</body>
+</html>

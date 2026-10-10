@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1f3a63" />
+  <title>管理后台 · 邀请码</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">管</div>
+      <h1>邀请码管理后台</h1>
+      <p>生成 · 校验状态 · 交付购买者</p>
+    </div>
+
+    <!-- 登录 -->
+    <section id="view-login" class="card">
+      <h2>管理员登录</h2>
+      <p class="sub">默认密码 admin123!（请到 config.json 修改）</p>
+      <input id="passInput" type="password" placeholder="管理员密码" />
+      <div style="margin-top:14px"><button id="loginBtn" class="btn">登录</button></div>
+      <div id="loginMsg" class="msg"></div>
+    </section>
+
+    <!-- 控制台 -->
+    <section id="view-dash" class="card" style="display:none">
+      <h2>生成邀请码</h2>
+      <p class="sub">生成后明文仅显示一次，请立即复制发送给购买者。</p>
+      <div class="code-row">
+        <input id="countInput" type="number" min="1" max="500" value="5" style="flex:0 0 110px; letter-spacing:0; text-transform:none; font-size:16px" />
+        <input id="noteInput" type="text" placeholder="备注（可选，如订单号）" style="letter-spacing:0; text-transform:none; font-size:14px" />
+      </div>
+      <div style="margin-top:14px"><button id="genBtn" class="btn accent">生成</button></div>
+      <div id="genMsg" class="msg"></div>
+      <div id="genOut" style="display:none; margin-top:14px">
+        <p class="muted">新生成的邀请码（复制后妥善发送）：</p>
+        <div class="kv" id="genCodes"></div>
+        <div style="margin-top:10px"><button id="copyAllBtn" class="btn secondary mini">复制全部</button></div>
+      </div>
+    </section>
+
+    <section id="view-list" class="card" style="display:none">
+      <h2>邀请码状态</h2>
+      <div class="stat">
+        <div><b id="statTotal">0</b><div class="muted">总数</div></div>
+        <div><b id="statUsed">0</b><div class="muted">已使用</div></div>
+        <div><b id="statUnused">0</b><div class="muted">未使用</div></div>
+      </div>
+      <div class="row-actions" style="margin-bottom:12px">
+        <button id="refreshBtn" class="btn secondary mini">刷新</button>
+        <button id="exportBtn" class="btn secondary mini">导出 CSV</button>
+        <button id="logoutBtn" class="btn secondary mini">退出</button>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="table" id="codeTable">
+          <thead><tr><th>邀请码</th><th>状态</th><th>备注</th><th>创建时间</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="muted" style="margin-top:10px">说明：列表中不显示明文（仅哈希存储），状态列反映已用/未用。交付时请用上方「生成」页复制的明文。</p>
+    </section>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

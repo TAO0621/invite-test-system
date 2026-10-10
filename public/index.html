@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2b4c7e" />
+  <title>我的本命色 · 四季16型色彩诊断</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">色</div>
+      <h1 id="siteTitle">我的本命色</h1>
+      <p id="siteSub">请输入邀请码开始</p>
+    </div>
+
+    <!-- 视图：邀请码输入 -->
+    <section id="view-entry" class="card">
+      <h2>输入邀请码</h2>
+      <p class="sub">本测试为付费专属内容，需使用有效邀请码进入。邀请码一次性有效，使用后立即失效。</p>
+      <div class="code-row">
+        <input id="codeInput" type="text" inputmode="text" autocomplete="off" maxlength="16" placeholder="例如 A1B2C3D4" />
+      </div>
+      <div style="margin-top:14px">
+        <button id="enterBtn" class="btn">进入测试</button>
+      </div>
+      <div id="entryMsg" class="msg"></div>
+    </section>
+
+    <!-- 视图：测试答题 -->
+    <section id="view-test" class="card" style="display:none">
+      <div class="progress"><i id="progBar"></i></div>
+      <div class="step-info" id="stepInfo"></div>
+      <p class="q-text" id="qText"></p>
+      <div class="options" id="optList"></div>
+      <div class="nav">
+        <button id="prevBtn" class="btn secondary">上一题</button>
+        <button id="nextBtn" class="btn">下一题</button>
+      </div>
+      <div id="testMsg" class="msg"></div>
+    </section>
+
+    <!-- 视图：结果 -->
+    <section id="view-result" style="display:none">
+      <div id="resBody"></div>
+      <div style="margin-top:8px">
+        <button id="retestBtn" class="btn secondary">重新查看</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="/report.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

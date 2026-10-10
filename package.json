@@ -1,0 +1,14 @@
+{
+  "name": "invite-test-system",
+  "version": "1.0.0",
+  "description": "我的本命色 · 邀请码制四季16型色彩诊断测试系统（零依赖 Node）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test_local.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,5737 @@
+{
+  "SEASON_THEME": {
+    "春": "#e6b54e",
+    "夏": "#7fa8c9",
+    "秋": "#c17a3f",
+    "冬": "#6c5ce7"
+  },
+  "SEASON_ORDER": [
+    "春",
+    "夏",
+    "秋",
+    "冬"
+  ],
+  "TYPE_ORDER": {
+    "春": [
+      "clear_spring",
+      "light_spring",
+      "soft_spring",
+      "bright_spring"
+    ],
+    "夏": [
+      "light_summer",
+      "soft_summer",
+      "bright_summer",
+      "deep_summer"
+    ],
+    "秋": [
+      "soft_autumn",
+      "bright_autumn",
+      "deep_autumn",
+      "light_autumn"
+    ],
+    "冬": [
+      "soft_winter",
+      "bright_winter",
+      "deep_winter",
+      "clear_winter"
+    ]
+  },
+  "TYPES": [
+    {
+      "id": "clear_spring",
+      "name": "净春型",
+      "season": "春",
+      "seasonEn": "Clear Spring",
+      "tagline": "清澈明媚的暖调高光",
+      "seasonFeature": "3月 雪化后盛开的花朵",
+      "colorAttributes": "暖 / 高明度 / 高彩度 / 清",
+      "repColors": [
+        "红色",
+        "珊瑚粉",
+        "草绿色",
+        "奶黄色"
+      ],
+      "celebrities": "IU / twice 娜琏 / 裴秀智 / 金泰熙",
+      "description": "你是春日里最干净透亮的一束光，暖而鲜明、对比分明。高饱和暖色让你瞬间发光，灰浊色则容易让你显得没精神。",
+      "traits": {
+        "temp": "暖",
+        "value": "高",
+        "chroma": "高",
+        "clarity": "清",
+        "contrast": "高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#FF6F61",
+            "name": "亮珊瑚"
+          },
+          {
+            "hex": "#FFC400",
+            "name": "鲜黄"
+          },
+          {
+            "hex": "#06A77D",
+            "name": "暖绿"
+          },
+          {
+            "hex": "#FF8C42",
+            "name": "亮橘"
+          },
+          {
+            "hex": "#FF5A5F",
+            "name": "西瓜红"
+          },
+          {
+            "hex": "#17A2A2",
+            "name": "暖青"
+          },
+          {
+            "hex": "#F6C453",
+            "name": "亮金"
+          },
+          {
+            "hex": "#FF9AA2",
+            "name": "暖粉"
+          }
+        ],
+        "clothingTip": "适合高饱和的暖色与撞色搭配，如亮珊瑚、鲜黄、暖绿；越鲜明越出彩，避开灰浊色。",
+        "lipstick": [
+          {
+            "hex": "#FF6F61",
+            "name": "亮珊瑚"
+          },
+          {
+            "hex": "#FF8C42",
+            "name": "鲜橘"
+          },
+          {
+            "hex": "#FF5A5F",
+            "name": "西瓜红"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#6E5B4F",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#7E8C9A",
+            "name": "雾蓝"
+          },
+          {
+            "hex": "#556B2F",
+            "name": "暗橄榄"
+          },
+          {
+            "hex": "#C9A9C9",
+            "name": "灰粉"
+          }
+        ]
+      },
+      "skinTone": "暖调鲜明",
+      "analysis": {
+        "skinBrightness": "偏高/高明度",
+        "skinSaturation": "高饱和",
+        "contrast": "高对比",
+        "hairAndPupil": "偏暖棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E6",
+            "name": "米白"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#E8DCC8",
+            "name": "浅卡其"
+          },
+          {
+            "hex": "#E6D0B3",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#D9D1C5",
+            "name": "暖灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#FF6F61",
+            "name": "亮珊瑚"
+          },
+          {
+            "hex": "#FFC400",
+            "name": "鲜黄"
+          },
+          {
+            "hex": "#06A77D",
+            "name": "暖绿"
+          },
+          {
+            "hex": "#FF8C42",
+            "name": "亮橘"
+          },
+          {
+            "hex": "#FF5A5F",
+            "name": "西瓜红"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#17A2A2",
+            "name": "暖青"
+          },
+          {
+            "hex": "#F6C453",
+            "name": "亮金"
+          },
+          {
+            "hex": "#FF9AA2",
+            "name": "暖粉"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#FF6F61",
+            "name": "亮珊瑚"
+          },
+          {
+            "hex": "#FFC400",
+            "name": "鲜黄"
+          },
+          {
+            "hex": "#06A77D",
+            "name": "暖绿"
+          },
+          {
+            "hex": "#FF8C42",
+            "name": "亮橘"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#FF5A5F",
+            "name": "西瓜红"
+          },
+          {
+            "hex": "#17A2A2",
+            "name": "暖青"
+          },
+          {
+            "hex": "#F6C453",
+            "name": "亮金"
+          },
+          {
+            "hex": "#FF9AA2",
+            "name": "暖粉"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#95A5B5",
+            "name": "冷灰蓝"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C08FA0",
+            "name": "灰玫"
+          },
+          {
+            "hex": "#1F3A5F",
+            "name": "深海军"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "金棕"
+          },
+          {
+            "hex": "#C19A6B",
+            "name": "榛果棕"
+          },
+          {
+            "hex": "#C08656",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#7A5C44",
+            "name": "巧克力棕"
+          }
+        ],
+        "note": "暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气",
+        "colors": [
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调清透，自然光泽感",
+        "blush": "蜜桃 / 珊瑚 / 杏橘",
+        "eyeshadow": "暖棕 / 杏色 / 浅橄榄 / 金棕",
+        "eyeliner": "深棕 / 暖灰棕",
+        "lipstick": "珊瑚 / 暖橘 / 南瓜 / 豆沙红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "玫瑰金"
+          },
+          {
+            "name": "铜色"
+          }
+        ],
+        "optional": [
+          {
+            "name": "白金"
+          },
+          {
+            "name": "暖珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "明媚元气",
+        "清新活力",
+        "温暖少女感",
+        "透亮清甜"
+      ],
+      "styles": [
+        "韩系清新",
+        "甜美通勤",
+        "度假休闲风",
+        "轻法式"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#8B6B4F",
+          "name": "暖棕发"
+        },
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "light_spring",
+      "name": "浅春型",
+      "season": "春",
+      "seasonEn": "Light Spring",
+      "tagline": "轻盈明亮的暖调少女感",
+      "seasonFeature": "5月 联想到樱花和木兰花",
+      "colorAttributes": "暖 / 高明度 / 中低彩度 / 清",
+      "repColors": [
+        "草绿色",
+        "淡鹅黄",
+        "珊瑚粉",
+        "蒂芙尼蓝"
+      ],
+      "celebrities": "林允儿 / 赵露思 / 宋慧乔",
+      "description": "你是春日初融的暖光，明度高、色调清新。柔和的暖色让你显得元气又干净，避免过重过冷的颜色。",
+      "traits": {
+        "temp": "暖",
+        "value": "高",
+        "chroma": "中低",
+        "clarity": "清",
+        "contrast": "中低"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#BFE3C9",
+            "name": "薄荷绿"
+          },
+          {
+            "hex": "#BFDAE0",
+            "name": "浅雾蓝"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F8B4A8",
+            "name": "浅珊瑚"
+          }
+        ],
+        "clothingTip": "适合奶白、浅杏、淡粉、薄荷绿等轻盈暖色，材质选柔软通透的棉麻、雪纺更出彩。",
+        "lipstick": [
+          {
+            "hex": "#F7A8A0",
+            "name": "珊瑚粉"
+          },
+          {
+            "hex": "#F2B5A0",
+            "name": "蜜桃"
+          },
+          {
+            "hex": "#F5B8B0",
+            "name": "淡橘粉"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          },
+          {
+            "hex": "#1B2A4A",
+            "name": "深海军蓝"
+          },
+          {
+            "hex": "#C0386B",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#6E5B4F",
+            "name": "灰褐"
+          }
+        ]
+      },
+      "skinTone": "暖调偏柔/中性暖调",
+      "analysis": {
+        "skinBrightness": "偏高/高明度",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "低-中对比",
+        "hairAndPupil": "偏暖棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E6",
+            "name": "米白"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#E8DCC8",
+            "name": "浅卡其"
+          },
+          {
+            "hex": "#E6D0B3",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#D9D1C5",
+            "name": "暖灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#BFE3C9",
+            "name": "薄荷绿"
+          },
+          {
+            "hex": "#BFDAE0",
+            "name": "浅雾蓝"
+          },
+          {
+            "hex": "#F8B4A8",
+            "name": "浅珊瑚"
+          }
+        ],
+        "accents": []
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#BFE3C9",
+            "name": "薄荷绿"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#BFDAE0",
+            "name": "浅雾蓝"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F8B4A8",
+            "name": "浅珊瑚"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#95A5B5",
+            "name": "冷灰蓝"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C08FA0",
+            "name": "灰玫"
+          },
+          {
+            "hex": "#1F3A5F",
+            "name": "深海军"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "金棕"
+          },
+          {
+            "hex": "#C19A6B",
+            "name": "榛果棕"
+          },
+          {
+            "hex": "#C08656",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#7A5C44",
+            "name": "巧克力棕"
+          }
+        ],
+        "note": "暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气",
+        "colors": [
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调清透，自然光泽感",
+        "blush": "蜜桃 / 珊瑚 / 杏橘",
+        "eyeshadow": "暖棕 / 杏色 / 浅橄榄 / 金棕",
+        "eyeliner": "深棕 / 暖灰棕",
+        "lipstick": "珊瑚 / 暖橘 / 南瓜 / 豆沙红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "玫瑰金"
+          },
+          {
+            "name": "铜色"
+          }
+        ],
+        "optional": [
+          {
+            "name": "白金"
+          },
+          {
+            "name": "暖珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "明媚元气",
+        "清新活力",
+        "温暖少女感",
+        "透亮清甜"
+      ],
+      "styles": [
+        "韩系清新",
+        "甜美通勤",
+        "度假休闲风",
+        "轻法式"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#8B6B4F",
+          "name": "暖棕发"
+        },
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "soft_spring",
+      "name": "柔春型",
+      "season": "春",
+      "seasonEn": "Soft Spring",
+      "tagline": "温柔雾感的暖调知性美",
+      "seasonFeature": "温柔的暖调莫兰迪",
+      "colorAttributes": "暖 / 中高明度 / 中低彩度 / 浊",
+      "repColors": [
+        "杏色",
+        "浅橙棕",
+        "浅橄榄绿",
+        "米白色"
+      ],
+      "celebrities": "韩孝周 / 晚晚 / 朴宝英",
+      "description": "你是被薄雾柔化的春天，暖而低饱和。灰调暖色比纯色更衬你，过于鲜亮的颜色反而显得突兀。",
+      "traits": {
+        "temp": "暖",
+        "value": "中高",
+        "chroma": "中低",
+        "clarity": "浊",
+        "contrast": "低"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#E3C3C0",
+            "name": "灰粉"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#A3B18A",
+            "name": "雾绿"
+          },
+          {
+            "hex": "#C2B280",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#B7A98B",
+            "name": "暖灰"
+          },
+          {
+            "hex": "#C89B9B",
+            "name": "干枯玫瑰"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#A9BEC9",
+            "name": "雾蓝"
+          }
+        ],
+        "clothingTip": "适合低饱和的暖灰、奶茶、雾绿，柔和不抢眼最显气质。",
+        "lipstick": [
+          {
+            "hex": "#C98986",
+            "name": "玫瑰豆沙"
+          },
+          {
+            "hex": "#B98C8C",
+            "name": "干枯玫瑰"
+          },
+          {
+            "hex": "#C19A8B",
+            "name": "蜜茶"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          },
+          {
+            "hex": "#FFD400",
+            "name": "鲜黄"
+          },
+          {
+            "hex": "#FF8C42",
+            "name": "亮橘"
+          },
+          {
+            "hex": "#2C3E50",
+            "name": "冷蓝"
+          }
+        ]
+      },
+      "skinTone": "暖调偏柔/中性暖调",
+      "analysis": {
+        "skinBrightness": "中偏浅",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "低对比",
+        "hairAndPupil": "偏暖棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E6",
+            "name": "米白"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#E8DCC8",
+            "name": "浅卡其"
+          },
+          {
+            "hex": "#E6D0B3",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#D9D1C5",
+            "name": "暖灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#E3C3C0",
+            "name": "灰粉"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#A3B18A",
+            "name": "雾绿"
+          },
+          {
+            "hex": "#C2B280",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#B7A98B",
+            "name": "暖灰"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#C89B9B",
+            "name": "干枯玫瑰"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#A9BEC9",
+            "name": "雾蓝"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#E3C3C0",
+            "name": "灰粉"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#A3B18A",
+            "name": "雾绿"
+          },
+          {
+            "hex": "#C2B280",
+            "name": "浅驼"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#B7A98B",
+            "name": "暖灰"
+          },
+          {
+            "hex": "#C89B9B",
+            "name": "干枯玫瑰"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#A9BEC9",
+            "name": "雾蓝"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#95A5B5",
+            "name": "冷灰蓝"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C08FA0",
+            "name": "灰玫"
+          },
+          {
+            "hex": "#1F3A5F",
+            "name": "深海军"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "金棕"
+          },
+          {
+            "hex": "#C19A6B",
+            "name": "榛果棕"
+          },
+          {
+            "hex": "#C08656",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#7A5C44",
+            "name": "巧克力棕"
+          }
+        ],
+        "note": "暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气",
+        "colors": [
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调清透，自然光泽感",
+        "blush": "蜜桃 / 珊瑚 / 杏橘",
+        "eyeshadow": "暖棕 / 杏色 / 浅橄榄 / 金棕",
+        "eyeliner": "深棕 / 暖灰棕",
+        "lipstick": "珊瑚 / 暖橘 / 南瓜 / 豆沙红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "玫瑰金"
+          },
+          {
+            "name": "铜色"
+          }
+        ],
+        "optional": [
+          {
+            "name": "白金"
+          },
+          {
+            "name": "暖珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "明媚元气",
+        "清新活力",
+        "温暖少女感",
+        "透亮清甜"
+      ],
+      "styles": [
+        "韩系清新",
+        "甜美通勤",
+        "度假休闲风",
+        "轻法式"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#8B6B4F",
+          "name": "暖棕发"
+        },
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "bright_spring",
+      "name": "亮春型",
+      "season": "春",
+      "seasonEn": "Bright Spring",
+      "tagline": "阳光金调的活跃暖美人",
+      "seasonFeature": "4月 姹紫嫣红的花海",
+      "colorAttributes": "暖 / 中高明度 / 中高彩度 / 清",
+      "repColors": [
+        "亮珊瑚橙",
+        "亮黄色",
+        "青苔绿",
+        "湖蓝色"
+      ],
+      "celebrities": "刘仁娜 / 赵丽颖 / 沈月 / Wendy",
+      "description": "你是暖洋洋的春日，金调明显、色彩清澈。金黄、珊瑚、暖绿最能点亮你的气色，暖调清色比浊色更适合。",
+      "traits": {
+        "temp": "暖",
+        "value": "中高",
+        "chroma": "中高",
+        "clarity": "清",
+        "contrast": "中高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#F4B942",
+            "name": "金黄"
+          },
+          {
+            "hex": "#F08A5D",
+            "name": "珊瑚橙"
+          },
+          {
+            "hex": "#7FB069",
+            "name": "暖草绿"
+          },
+          {
+            "hex": "#E8B06B",
+            "name": "杏色"
+          },
+          {
+            "hex": "#E15B4C",
+            "name": "暖红"
+          },
+          {
+            "hex": "#F4A259",
+            "name": "蜜橘"
+          },
+          {
+            "hex": "#A7C796",
+            "name": "浅橄榄"
+          },
+          {
+            "hex": "#FCE5A3",
+            "name": "奶油黄"
+          }
+        ],
+        "clothingTip": "适合金黄、珊瑚、暖绿、杏色等暖调清色，亮色比浊色更出彩。",
+        "lipstick": [
+          {
+            "hex": "#EE6C4D",
+            "name": "暖珊瑚"
+          },
+          {
+            "hex": "#C84B31",
+            "name": "砖红"
+          },
+          {
+            "hex": "#E2725B",
+            "name": "南瓜色"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#2C3E50",
+            "name": "冷蓝"
+          },
+          {
+            "hex": "#C0386B",
+            "name": "冷玫"
+          },
+          {
+            "hex": "#808080",
+            "name": "灰"
+          },
+          {
+            "hex": "#6A5ACD",
+            "name": "冷紫"
+          }
+        ]
+      },
+      "skinTone": "暖调鲜明",
+      "analysis": {
+        "skinBrightness": "中偏浅",
+        "skinSaturation": "中饱和",
+        "contrast": "中高对比",
+        "hairAndPupil": "偏暖棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E6",
+            "name": "米白"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#E8DCC8",
+            "name": "浅卡其"
+          },
+          {
+            "hex": "#E6D0B3",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#D9D1C5",
+            "name": "暖灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#F4B942",
+            "name": "金黄"
+          },
+          {
+            "hex": "#F08A5D",
+            "name": "珊瑚橙"
+          },
+          {
+            "hex": "#7FB069",
+            "name": "暖草绿"
+          },
+          {
+            "hex": "#E8B06B",
+            "name": "杏色"
+          },
+          {
+            "hex": "#E15B4C",
+            "name": "暖红"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#F4A259",
+            "name": "蜜橘"
+          },
+          {
+            "hex": "#A7C796",
+            "name": "浅橄榄"
+          },
+          {
+            "hex": "#FCE5A3",
+            "name": "奶油黄"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#F4B942",
+            "name": "金黄"
+          },
+          {
+            "hex": "#F08A5D",
+            "name": "珊瑚橙"
+          },
+          {
+            "hex": "#7FB069",
+            "name": "暖草绿"
+          },
+          {
+            "hex": "#E8B06B",
+            "name": "杏色"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#E15B4C",
+            "name": "暖红"
+          },
+          {
+            "hex": "#F4A259",
+            "name": "蜜橘"
+          },
+          {
+            "hex": "#A7C796",
+            "name": "浅橄榄"
+          },
+          {
+            "hex": "#FCE5A3",
+            "name": "奶油黄"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#95A5B5",
+            "name": "冷灰蓝"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C08FA0",
+            "name": "灰玫"
+          },
+          {
+            "hex": "#1F3A5F",
+            "name": "深海军"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "金棕"
+          },
+          {
+            "hex": "#C19A6B",
+            "name": "榛果棕"
+          },
+          {
+            "hex": "#C08656",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#7A5C44",
+            "name": "巧克力棕"
+          }
+        ],
+        "note": "暖棕、金棕、榛果棕、焦糖棕、浅巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中高明度、中低饱和的颜色能提亮肤色，显元气",
+        "colors": [
+          {
+            "hex": "#FBF3E4",
+            "name": "奶油白"
+          },
+          {
+            "hex": "#F7D9B8",
+            "name": "浅杏"
+          },
+          {
+            "hex": "#FCE3A3",
+            "name": "淡鹅黄"
+          },
+          {
+            "hex": "#F6C1B3",
+            "name": "蜜桃粉"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调清透，自然光泽感",
+        "blush": "蜜桃 / 珊瑚 / 杏橘",
+        "eyeshadow": "暖棕 / 杏色 / 浅橄榄 / 金棕",
+        "eyeliner": "深棕 / 暖灰棕",
+        "lipstick": "珊瑚 / 暖橘 / 南瓜 / 豆沙红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "玫瑰金"
+          },
+          {
+            "name": "铜色"
+          }
+        ],
+        "optional": [
+          {
+            "name": "白金"
+          },
+          {
+            "name": "暖珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷灰调、灰浊色容易让暖调肤色显得暗沉、没精神",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FF5FA2",
+            "name": "荧光粉"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "明媚元气",
+        "清新活力",
+        "温暖少女感",
+        "透亮清甜"
+      ],
+      "styles": [
+        "韩系清新",
+        "甜美通勤",
+        "度假休闲风",
+        "轻法式"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#8B6B4F",
+          "name": "暖棕发"
+        },
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "light_summer",
+      "name": "浅夏型",
+      "season": "夏",
+      "seasonEn": "Light Summer",
+      "tagline": "轻盈朦胧的冷调氧气感",
+      "seasonFeature": "6月 被阳光照耀的波光粼粼的湖面",
+      "colorAttributes": "冷 / 高明度 / 中低彩度 / 清",
+      "repColors": [
+        "天空蓝",
+        "薄荷绿",
+        "薰衣草紫",
+        "柠檬黄"
+      ],
+      "celebrities": "孙艺珍 / 陈都灵 / 章泽天 / 周冬雨",
+      "description": "你是夏日清晨的薄雾，明亮而冷静。浅淡的冷色让你温柔通透，浓重暖色容易压住你的轻盈感。",
+      "traits": {
+        "temp": "冷",
+        "value": "高",
+        "chroma": "中低",
+        "clarity": "清",
+        "contrast": "中低"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#BFD7D5",
+            "name": "雾蓝"
+          },
+          {
+            "hex": "#D6CDEA",
+            "name": "粉紫"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "奶白"
+          },
+          {
+            "hex": "#C8D5C5",
+            "name": "浅灰绿"
+          },
+          {
+            "hex": "#E8D6E0",
+            "name": "淡玫瑰"
+          },
+          {
+            "hex": "#BCD3D0",
+            "name": "雾蓝绿"
+          }
+        ],
+        "clothingTip": "适合浅蓝灰、淡粉、雾蓝等轻盈冷色，避开浓重暖色。",
+        "lipstick": [
+          {
+            "hex": "#C9A9C9",
+            "name": "粉紫"
+          },
+          {
+            "hex": "#D6A9B8",
+            "name": "淡玫瑰"
+          },
+          {
+            "hex": "#E0B8C0",
+            "name": "裸粉"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E8732B",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#F4B942",
+            "name": "金黄"
+          },
+          {
+            "hex": "#5C4033",
+            "name": "深棕"
+          },
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          }
+        ]
+      },
+      "skinTone": "冷调偏中性",
+      "analysis": {
+        "skinBrightness": "偏高/高明度",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "低-中对比",
+        "hairAndPupil": "自然黑/冷棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "冷米"
+          },
+          {
+            "hex": "#E8E3E6",
+            "name": "浅灰"
+          },
+          {
+            "hex": "#B0C4DE",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#F5EDEF",
+            "name": "浅粉白"
+          },
+          {
+            "hex": "#D8D8D8",
+            "name": "中性灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#BFD7D5",
+            "name": "雾蓝"
+          },
+          {
+            "hex": "#D6CDEA",
+            "name": "粉紫"
+          },
+          {
+            "hex": "#C8D5C5",
+            "name": "浅灰绿"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#E8D6E0",
+            "name": "淡玫瑰"
+          },
+          {
+            "hex": "#BCD3D0",
+            "name": "雾蓝绿"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#BFD7D5",
+            "name": "雾蓝"
+          },
+          {
+            "hex": "#D6CDEA",
+            "name": "粉紫"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#F0EDEA",
+            "name": "奶白"
+          },
+          {
+            "hex": "#C8D5C5",
+            "name": "浅灰绿"
+          },
+          {
+            "hex": "#E8D6E0",
+            "name": "淡玫瑰"
+          },
+          {
+            "hex": "#BCD3D0",
+            "name": "雾蓝绿"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D4AF37",
+            "name": "暖金"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#1A1A1A",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#4A3B32",
+            "name": "冷棕"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "黑茶"
+          },
+          {
+            "hex": "#4A372F",
+            "name": "深巧克力棕"
+          },
+          {
+            "hex": "#6B6864",
+            "name": "冷灰棕"
+          }
+        ],
+        "note": "自然黑、冷棕、黑茶、深巧克力棕、冷灰棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、低饱和、中高明度的颜色能提亮肤色，显通透",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "奶白"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，自然清透妆感",
+        "blush": "粉玫瑰 / 冷粉色 / 灰粉色",
+        "eyeshadow": "灰玫瑰 / 玫瑰粉 / 藕粉 / 丁香紫 / 灰棕",
+        "eyeliner": "深棕 / 灰棕 / 灰黑（柔和）",
+        "lipstick": "玫瑰豆沙 / 冷粉 / 梅子色 / 藕紫 / 灰玫红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "灰调珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "暖黄调、高饱和、低明度的颜色容易让肤色暗沉",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "清冷柔和",
+        "优雅知性",
+        "温柔内敛",
+        "纯净通透",
+        "书卷气质"
+      ],
+      "styles": [
+        "气质通勤风",
+        "极简高级风",
+        "温柔知性风",
+        "日系清新风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#1A1A1A",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#4A3B32",
+          "name": "冷棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "soft_summer",
+      "name": "柔夏型",
+      "season": "夏",
+      "seasonEn": "Soft Summer",
+      "tagline": "温润朦胧的灰调气质",
+      "seasonFeature": "8月 阴雨绵绵的夏季梅雨季",
+      "colorAttributes": "冷 / 中高明度 / 中低彩度 / 浊",
+      "repColors": [
+        "雾霾蓝",
+        "烟灰紫",
+        "灰色",
+        "皮粉色"
+      ],
+      "celebrities": "全智贤 / 金智媛 / 申惠善",
+      "description": "你是被柔化的夏日，冷而低饱和。灰调中性色让你气质沉静，过于鲜亮的颜色会抢走你的温柔感。",
+      "traits": {
+        "temp": "冷",
+        "value": "中高",
+        "chroma": "中低",
+        "clarity": "浊",
+        "contrast": "低"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#B6AFA3",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#A9B0A6",
+            "name": "灰绿"
+          },
+          {
+            "hex": "#C2B8B0",
+            "name": "雾粉"
+          },
+          {
+            "hex": "#9FA8A3",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#BDB2A7",
+            "name": "干玫瑰"
+          },
+          {
+            "hex": "#AEB2B8",
+            "name": "灰紫"
+          },
+          {
+            "hex": "#CFC7BC",
+            "name": "米灰"
+          },
+          {
+            "hex": "#A8B2B8",
+            "name": "雾蓝"
+          }
+        ],
+        "clothingTip": "适合灰调中性色、雾粉、灰绿，柔和低调最耐看。",
+        "lipstick": [
+          {
+            "hex": "#B5949C",
+            "name": "灰粉"
+          },
+          {
+            "hex": "#A67B7B",
+            "name": "摩卡玫瑰"
+          },
+          {
+            "hex": "#BFA0A0",
+            "name": "裸豆沙"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#FFD400",
+            "name": "亮黄"
+          },
+          {
+            "hex": "#FF8C42",
+            "name": "鲜橙"
+          },
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          },
+          {
+            "hex": "#FF0F7B",
+            "name": "亮玫"
+          }
+        ]
+      },
+      "skinTone": "冷调偏中性",
+      "analysis": {
+        "skinBrightness": "中偏浅",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "低对比",
+        "hairAndPupil": "自然黑/冷棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "冷米"
+          },
+          {
+            "hex": "#E8E3E6",
+            "name": "浅灰"
+          },
+          {
+            "hex": "#B0C4DE",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#F5EDEF",
+            "name": "浅粉白"
+          },
+          {
+            "hex": "#D8D8D8",
+            "name": "中性灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#B6AFA3",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#A9B0A6",
+            "name": "灰绿"
+          },
+          {
+            "hex": "#C2B8B0",
+            "name": "雾粉"
+          },
+          {
+            "hex": "#9FA8A3",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#BDB2A7",
+            "name": "干玫瑰"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#AEB2B8",
+            "name": "灰紫"
+          },
+          {
+            "hex": "#CFC7BC",
+            "name": "米灰"
+          },
+          {
+            "hex": "#A8B2B8",
+            "name": "雾蓝"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#B6AFA3",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#A9B0A6",
+            "name": "灰绿"
+          },
+          {
+            "hex": "#C2B8B0",
+            "name": "雾粉"
+          },
+          {
+            "hex": "#9FA8A3",
+            "name": "灰蓝"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#BDB2A7",
+            "name": "干玫瑰"
+          },
+          {
+            "hex": "#AEB2B8",
+            "name": "灰紫"
+          },
+          {
+            "hex": "#CFC7BC",
+            "name": "米灰"
+          },
+          {
+            "hex": "#A8B2B8",
+            "name": "雾蓝"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D4AF37",
+            "name": "暖金"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#1A1A1A",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#4A3B32",
+            "name": "冷棕"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "黑茶"
+          },
+          {
+            "hex": "#4A372F",
+            "name": "深巧克力棕"
+          },
+          {
+            "hex": "#6B6864",
+            "name": "冷灰棕"
+          }
+        ],
+        "note": "自然黑、冷棕、黑茶、深巧克力棕、冷灰棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、低饱和、中高明度的颜色能提亮肤色，显通透",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "奶白"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，自然清透妆感",
+        "blush": "粉玫瑰 / 冷粉色 / 灰粉色",
+        "eyeshadow": "灰玫瑰 / 玫瑰粉 / 藕粉 / 丁香紫 / 灰棕",
+        "eyeliner": "深棕 / 灰棕 / 灰黑（柔和）",
+        "lipstick": "玫瑰豆沙 / 冷粉 / 梅子色 / 藕紫 / 灰玫红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "灰调珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "暖黄调、高饱和、低明度的颜色容易让肤色暗沉",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "清冷柔和",
+        "优雅知性",
+        "温柔内敛",
+        "纯净通透",
+        "书卷气质"
+      ],
+      "styles": [
+        "气质通勤风",
+        "极简高级风",
+        "温柔知性风",
+        "日系清新风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#1A1A1A",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#4A3B32",
+          "name": "冷棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "bright_summer",
+      "name": "亮夏型",
+      "season": "夏",
+      "seasonEn": "Bright Summer",
+      "tagline": "清澈通透的冷调亮泽",
+      "seasonFeature": "7月 午后的沙滩和大海",
+      "colorAttributes": "冷 / 中高明度 / 中高彩度 / 清",
+      "repColors": [
+        "冰蓝色",
+        "紫罗兰色",
+        "珍珠白",
+        "玫红色"
+      ],
+      "celebrities": "张元英 / 宋轶 / 裴珠泫",
+      "description": "你在夏季里最为清亮，冷而明净。干净饱和的冷色让你神采飞扬，浊色会让你的轮廓变糊。",
+      "traits": {
+        "temp": "冷",
+        "value": "中高",
+        "chroma": "中高",
+        "clarity": "清",
+        "contrast": "中高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#7FA8C9",
+            "name": "清水蓝"
+          },
+          {
+            "hex": "#B5838D",
+            "name": "玫瑰"
+          },
+          {
+            "hex": "#6FA8B0",
+            "name": "净青"
+          },
+          {
+            "hex": "#C58DA3",
+            "name": "莓粉"
+          },
+          {
+            "hex": "#5E8B9E",
+            "name": "蓝紫"
+          },
+          {
+            "hex": "#B0859C",
+            "name": "净藕"
+          },
+          {
+            "hex": "#88B0C0",
+            "name": "湖蓝"
+          },
+          {
+            "hex": "#C98BA0",
+            "name": "冷玫"
+          }
+        ],
+        "clothingTip": "适合清澈的蓝、净青、冷玫等明净冷色，越干净越出彩。",
+        "lipstick": [
+          {
+            "hex": "#C0386B",
+            "name": "莓红"
+          },
+          {
+            "hex": "#C84B7E",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#B83B6E",
+            "name": "蓝调红"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E8732B",
+            "name": "暖橘"
+          },
+          {
+            "hex": "#C19A4E",
+            "name": "土黄"
+          },
+          {
+            "hex": "#5C4033",
+            "name": "深棕"
+          },
+          {
+            "hex": "#7FB069",
+            "name": "暖绿"
+          }
+        ]
+      },
+      "skinTone": "冷调鲜明",
+      "analysis": {
+        "skinBrightness": "中偏浅",
+        "skinSaturation": "中饱和",
+        "contrast": "中高对比",
+        "hairAndPupil": "自然黑/冷棕发 / 柔和深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "冷米"
+          },
+          {
+            "hex": "#E8E3E6",
+            "name": "浅灰"
+          },
+          {
+            "hex": "#B0C4DE",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#F5EDEF",
+            "name": "浅粉白"
+          },
+          {
+            "hex": "#D8D8D8",
+            "name": "中性灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#7FA8C9",
+            "name": "清水蓝"
+          },
+          {
+            "hex": "#B5838D",
+            "name": "玫瑰"
+          },
+          {
+            "hex": "#6FA8B0",
+            "name": "净青"
+          },
+          {
+            "hex": "#C58DA3",
+            "name": "莓粉"
+          },
+          {
+            "hex": "#5E8B9E",
+            "name": "蓝紫"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#B0859C",
+            "name": "净藕"
+          },
+          {
+            "hex": "#88B0C0",
+            "name": "湖蓝"
+          },
+          {
+            "hex": "#C98BA0",
+            "name": "冷玫"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#7FA8C9",
+            "name": "清水蓝"
+          },
+          {
+            "hex": "#B5838D",
+            "name": "玫瑰"
+          },
+          {
+            "hex": "#6FA8B0",
+            "name": "净青"
+          },
+          {
+            "hex": "#C58DA3",
+            "name": "莓粉"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#5E8B9E",
+            "name": "蓝紫"
+          },
+          {
+            "hex": "#B0859C",
+            "name": "净藕"
+          },
+          {
+            "hex": "#88B0C0",
+            "name": "湖蓝"
+          },
+          {
+            "hex": "#C98BA0",
+            "name": "冷玫"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D4AF37",
+            "name": "暖金"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#1A1A1A",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#4A3B32",
+            "name": "冷棕"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "黑茶"
+          },
+          {
+            "hex": "#4A372F",
+            "name": "深巧克力棕"
+          },
+          {
+            "hex": "#6B6864",
+            "name": "冷灰棕"
+          }
+        ],
+        "note": "自然黑、冷棕、黑茶、深巧克力棕、冷灰棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、低饱和、中高明度的颜色能提亮肤色，显通透",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "奶白"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，自然清透妆感",
+        "blush": "粉玫瑰 / 冷粉色 / 灰粉色",
+        "eyeshadow": "灰玫瑰 / 玫瑰粉 / 藕粉 / 丁香紫 / 灰棕",
+        "eyeliner": "深棕 / 灰棕 / 灰黑（柔和）",
+        "lipstick": "玫瑰豆沙 / 冷粉 / 梅子色 / 藕紫 / 灰玫红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "灰调珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "暖黄调、高饱和、低明度的颜色容易让肤色暗沉",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "清冷柔和",
+        "优雅知性",
+        "温柔内敛",
+        "纯净通透",
+        "书卷气质"
+      ],
+      "styles": [
+        "气质通勤风",
+        "极简高级风",
+        "温柔知性风",
+        "日系清新风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#1A1A1A",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#4A3B32",
+          "name": "冷棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "deep_summer",
+      "name": "深夏型",
+      "season": "夏",
+      "seasonEn": "Deep Summer",
+      "tagline": "清冷内敛的深冷调",
+      "seasonFeature": "阳光下沉默的树荫",
+      "colorAttributes": "冷 / 中低明度 / 中低彩度 / 清浊",
+      "repColors": [
+        "深灰蓝",
+        "酒红色",
+        "深薰衣草紫"
+      ],
+      "celebrities": "金泰梨 / 鞠婧祎 / 周子瑜",
+      "description": "你是夏日傍晚的深海，冷而偏深。带灰的深冷色最能衬托你的沉稳，浅淡暖色会让你显得浮肿。",
+      "traits": {
+        "temp": "冷",
+        "value": "中低",
+        "chroma": "中低",
+        "clarity": "清浊",
+        "contrast": "中"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#5B7C99",
+            "name": "深灰蓝"
+          },
+          {
+            "hex": "#7E6B8A",
+            "name": "烟紫"
+          },
+          {
+            "hex": "#4A6FA5",
+            "name": "黛蓝"
+          },
+          {
+            "hex": "#6C8EBF",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#6B7B8C",
+            "name": "铅灰"
+          },
+          {
+            "hex": "#5E6B7A",
+            "name": "深雾蓝"
+          },
+          {
+            "hex": "#7A8490",
+            "name": "银灰"
+          },
+          {
+            "hex": "#4F6270",
+            "name": "深青灰"
+          }
+        ],
+        "clothingTip": "适合深灰蓝、烟紫、黛蓝等带灰的深冷色，整体保持中等对比。",
+        "lipstick": [
+          {
+            "hex": "#8A4F6A",
+            "name": "深玫瑰"
+          },
+          {
+            "hex": "#7A4F66",
+            "name": "烟紫红"
+          },
+          {
+            "hex": "#6B4C5A",
+            "name": "深豆沙"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E8732B",
+            "name": "暖橘"
+          },
+          {
+            "hex": "#F4B942",
+            "name": "金黄"
+          },
+          {
+            "hex": "#FF6F61",
+            "name": "亮珊瑚"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "米白"
+          }
+        ]
+      },
+      "skinTone": "冷调偏中性",
+      "analysis": {
+        "skinBrightness": "中偏深",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "中等对比",
+        "hairAndPupil": "自然黑发 / 深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "冷米"
+          },
+          {
+            "hex": "#E8E3E6",
+            "name": "浅灰"
+          },
+          {
+            "hex": "#B0C4DE",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#F5EDEF",
+            "name": "浅粉白"
+          },
+          {
+            "hex": "#D8D8D8",
+            "name": "中性灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#5B7C99",
+            "name": "深灰蓝"
+          },
+          {
+            "hex": "#7E6B8A",
+            "name": "烟紫"
+          },
+          {
+            "hex": "#4A6FA5",
+            "name": "黛蓝"
+          },
+          {
+            "hex": "#6C8EBF",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#6B7B8C",
+            "name": "铅灰"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#5E6B7A",
+            "name": "深雾蓝"
+          },
+          {
+            "hex": "#7A8490",
+            "name": "银灰"
+          },
+          {
+            "hex": "#4F6270",
+            "name": "深青灰"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#5B7C99",
+            "name": "深灰蓝"
+          },
+          {
+            "hex": "#7E6B8A",
+            "name": "烟紫"
+          },
+          {
+            "hex": "#4A6FA5",
+            "name": "黛蓝"
+          },
+          {
+            "hex": "#6C8EBF",
+            "name": "灰蓝"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#6B7B8C",
+            "name": "铅灰"
+          },
+          {
+            "hex": "#5E6B7A",
+            "name": "深雾蓝"
+          },
+          {
+            "hex": "#7A8490",
+            "name": "银灰"
+          },
+          {
+            "hex": "#4F6270",
+            "name": "深青灰"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D4AF37",
+            "name": "暖金"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#1A1A1A",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#4A3B32",
+            "name": "冷棕"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "黑茶"
+          },
+          {
+            "hex": "#4A372F",
+            "name": "深巧克力棕"
+          },
+          {
+            "hex": "#6B6864",
+            "name": "冷灰棕"
+          }
+        ],
+        "note": "自然黑、冷棕、黑茶、深巧克力棕、冷灰棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、低饱和、中高明度的颜色能提亮肤色，显通透",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅蓝灰"
+          },
+          {
+            "hex": "#E0D4E0",
+            "name": "淡丁香"
+          },
+          {
+            "hex": "#F0EDEA",
+            "name": "奶白"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，自然清透妆感",
+        "blush": "粉玫瑰 / 冷粉色 / 灰粉色",
+        "eyeshadow": "灰玫瑰 / 玫瑰粉 / 藕粉 / 丁香紫 / 灰棕",
+        "eyeliner": "深棕 / 灰棕 / 灰黑（柔和）",
+        "lipstick": "玫瑰豆沙 / 冷粉 / 梅子色 / 藕紫 / 灰玫红"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "灰调珍珠"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "暖黄调、高饱和、低明度的颜色容易让肤色暗沉",
+        "colors": [
+          {
+            "hex": "#111111",
+            "name": "纯黑"
+          },
+          {
+            "hex": "#FF5A1F",
+            "name": "橘红"
+          },
+          {
+            "hex": "#FFD700",
+            "name": "亮金"
+          },
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "清冷柔和",
+        "优雅知性",
+        "温柔内敛",
+        "纯净通透",
+        "书卷气质"
+      ],
+      "styles": [
+        "气质通勤风",
+        "极简高级风",
+        "温柔知性风",
+        "日系清新风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#1A1A1A",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#4A3B32",
+          "name": "冷棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "soft_autumn",
+      "name": "柔秋型",
+      "season": "秋",
+      "seasonEn": "Soft Autumn",
+      "tagline": "温润泥土的雾感暖调",
+      "seasonFeature": "9月 叶子被蒸发了水分",
+      "colorAttributes": "暖 / 中低明度 / 中低彩度 / 浊",
+      "repColors": [
+        "卡其色",
+        "沙棕色",
+        "橄榄绿",
+        "驼色"
+      ],
+      "celebrities": "—",
+      "description": "你是秋日里被柔化的暖意，暖而低饱和。大地浊色最显温柔，冷亮色会让你显得气色不足。",
+      "traits": {
+        "temp": "暖",
+        "value": "中低",
+        "chroma": "中低",
+        "clarity": "浊",
+        "contrast": "低"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#B08968",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#A9927D",
+            "name": "橄榄褐"
+          },
+          {
+            "hex": "#8A9A5B",
+            "name": "苔绿"
+          },
+          {
+            "hex": "#C4A484",
+            "name": "驼色"
+          },
+          {
+            "hex": "#9C8B6B",
+            "name": "暖灰"
+          },
+          {
+            "hex": "#B5A48B",
+            "name": "雾橘"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "焦糖"
+          },
+          {
+            "hex": "#A7B08A",
+            "name": "灰绿"
+          }
+        ],
+        "clothingTip": "适合驼色、橄榄、灰褐、苔绿等柔和大地色，避开冷亮色。",
+        "lipstick": [
+          {
+            "hex": "#B86B4B",
+            "name": "土橘"
+          },
+          {
+            "hex": "#A15C3C",
+            "name": "砖红棕"
+          },
+          {
+            "hex": "#B5734F",
+            "name": "焦糖"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#2C3E50",
+            "name": "冷蓝"
+          },
+          {
+            "hex": "#FF6F91",
+            "name": "亮粉"
+          },
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          },
+          {
+            "hex": "#B0A8C0",
+            "name": "冰紫"
+          }
+        ]
+      },
+      "skinTone": "暖调偏柔/中性暖调",
+      "analysis": {
+        "skinBrightness": "中偏深",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "低对比",
+        "hairAndPupil": "深棕/巧克力棕发 / 深褐瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#C4A484",
+            "name": "卡其"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "驼色"
+          },
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#7A7B52",
+            "name": "橄榄"
+          },
+          {
+            "hex": "#6B6B6B",
+            "name": "深灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#B08968",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#A9927D",
+            "name": "橄榄褐"
+          },
+          {
+            "hex": "#8A9A5B",
+            "name": "苔绿"
+          },
+          {
+            "hex": "#9C8B6B",
+            "name": "暖灰"
+          },
+          {
+            "hex": "#B5A48B",
+            "name": "雾橘"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#A7B08A",
+            "name": "灰绿"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#B08968",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#A9927D",
+            "name": "橄榄褐"
+          },
+          {
+            "hex": "#8A9A5B",
+            "name": "苔绿"
+          },
+          {
+            "hex": "#C4A484",
+            "name": "驼色"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#9C8B6B",
+            "name": "暖灰"
+          },
+          {
+            "hex": "#B5A48B",
+            "name": "雾橘"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "焦糖"
+          },
+          {
+            "hex": "#A7B08A",
+            "name": "灰绿"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#F3C6D6",
+            "name": "冷粉"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅灰蓝"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#5C4033",
+            "name": "深棕"
+          },
+          {
+            "hex": "#6B4226",
+            "name": "巧克力棕"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖栗棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "深金棕"
+          }
+        ],
+        "note": "深棕、巧克力棕、焦糖棕、暖栗棕、深金棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中明度、中低饱和的颜色能提亮肤色，显质感",
+        "colors": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调自然哑光，健康光泽",
+        "blush": "陶土 / 南瓜 / 焦糖橘",
+        "eyeshadow": "金棕 / 橄榄绿 / 暖灰 / 古铜",
+        "eyeliner": "深棕 / 橄榄棕",
+        "lipstick": "砖红 / 焦糖 / 南瓜 / 土橘"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "古铜"
+          },
+          {
+            "name": "玫瑰金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "暖珍珠"
+          },
+          {
+            "name": "琥珀"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷蓝、亮粉等高对比冷色容易显得气色不足、肤色发灰",
+        "colors": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "浓郁温暖",
+        "复古知性",
+        "沉稳高级",
+        "轻熟质感",
+        "大地气息"
+      ],
+      "styles": [
+        "复古港风",
+        "美拉德风",
+        "文艺通勤",
+        "大地质感风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#6B4226",
+          "name": "巧克力棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "bright_autumn",
+      "name": "亮秋型",
+      "season": "秋",
+      "seasonEn": "Bright Autumn",
+      "tagline": "丰收温暖的浓郁暖调",
+      "seasonFeature": "丰收的田野，金灿灿的小麦",
+      "colorAttributes": "暖 / 中明度 / 中高彩度 / 清浊",
+      "repColors": [
+        "南瓜橙",
+        "番茄红",
+        "明艳金色"
+      ],
+      "celebrities": "李孝利 / 金喜善 / 杨采钰",
+      "description": "你是秋日暖阳，金调饱满、色彩浓郁。焦糖、铁锈、暖棕最衬你，柔和浊色会让你失去光彩。",
+      "traits": {
+        "temp": "暖",
+        "value": "中",
+        "chroma": "中高",
+        "clarity": "清浊",
+        "contrast": "中"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#C17A3F",
+            "name": "铁锈"
+          },
+          {
+            "hex": "#A9521E",
+            "name": "焦橙"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#B5651D",
+            "name": "南瓜"
+          },
+          {
+            "hex": "#D98E3B",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#9C6B2E",
+            "name": "砖红"
+          },
+          {
+            "hex": "#7A6A3A",
+            "name": "橄榄绿"
+          },
+          {
+            "hex": "#C99A4E",
+            "name": "蜂蜜"
+          }
+        ],
+        "clothingTip": "适合铁锈、焦橙、暖棕、芥末黄等浓郁暖色，越温暖越有质感。",
+        "lipstick": [
+          {
+            "hex": "#A8421E",
+            "name": "铁锈红"
+          },
+          {
+            "hex": "#B23A1E",
+            "name": "砖红"
+          },
+          {
+            "hex": "#C25A35",
+            "name": "南瓜红"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#2C3E50",
+            "name": "冷蓝"
+          },
+          {
+            "hex": "#FFD1DC",
+            "name": "冰粉"
+          },
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          },
+          {
+            "hex": "#6A5ACD",
+            "name": "冷紫"
+          }
+        ]
+      },
+      "skinTone": "暖调偏柔/中性暖调",
+      "analysis": {
+        "skinBrightness": "中等",
+        "skinSaturation": "中饱和",
+        "contrast": "中等对比",
+        "hairAndPupil": "暖棕发色 / 深褐瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#C4A484",
+            "name": "卡其"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "驼色"
+          },
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#7A7B52",
+            "name": "橄榄"
+          },
+          {
+            "hex": "#6B6B6B",
+            "name": "深灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#C17A3F",
+            "name": "铁锈"
+          },
+          {
+            "hex": "#A9521E",
+            "name": "焦橙"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#B5651D",
+            "name": "南瓜"
+          },
+          {
+            "hex": "#D98E3B",
+            "name": "芥末黄"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#9C6B2E",
+            "name": "砖红"
+          },
+          {
+            "hex": "#7A6A3A",
+            "name": "橄榄绿"
+          },
+          {
+            "hex": "#C99A4E",
+            "name": "蜂蜜"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#C17A3F",
+            "name": "铁锈"
+          },
+          {
+            "hex": "#A9521E",
+            "name": "焦橙"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#B5651D",
+            "name": "南瓜"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#D98E3B",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#9C6B2E",
+            "name": "砖红"
+          },
+          {
+            "hex": "#7A6A3A",
+            "name": "橄榄绿"
+          },
+          {
+            "hex": "#C99A4E",
+            "name": "蜂蜜"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#F3C6D6",
+            "name": "冷粉"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅灰蓝"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#5C4033",
+            "name": "深棕"
+          },
+          {
+            "hex": "#6B4226",
+            "name": "巧克力棕"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖栗棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "深金棕"
+          }
+        ],
+        "note": "深棕、巧克力棕、焦糖棕、暖栗棕、深金棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中明度、中低饱和的颜色能提亮肤色，显质感",
+        "colors": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调自然哑光，健康光泽",
+        "blush": "陶土 / 南瓜 / 焦糖橘",
+        "eyeshadow": "金棕 / 橄榄绿 / 暖灰 / 古铜",
+        "eyeliner": "深棕 / 橄榄棕",
+        "lipstick": "砖红 / 焦糖 / 南瓜 / 土橘"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "古铜"
+          },
+          {
+            "name": "玫瑰金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "暖珍珠"
+          },
+          {
+            "name": "琥珀"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷蓝、亮粉等高对比冷色容易显得气色不足、肤色发灰",
+        "colors": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "浓郁温暖",
+        "复古知性",
+        "沉稳高级",
+        "轻熟质感",
+        "大地气息"
+      ],
+      "styles": [
+        "复古港风",
+        "美拉德风",
+        "文艺通勤",
+        "大地质感风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#6B4226",
+          "name": "巧克力棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "deep_autumn",
+      "name": "深秋型",
+      "season": "秋",
+      "seasonEn": "Deep Autumn",
+      "tagline": "浓郁厚重的深暖调",
+      "seasonFeature": "暗红的枫叶",
+      "colorAttributes": "暖 / 中低明度 / 中彩度 / 清",
+      "repColors": [
+        "枫叶红",
+        "深棕色",
+        "暗焦糖色"
+      ],
+      "celebrities": "朱珠 / 辛芷蕾 / 金裕贞",
+      "description": "你拥有秋季最深的浓度，深而暖。深沉大地色让你气场强大，浅淡色易显气色不足。",
+      "traits": {
+        "temp": "暖",
+        "value": "中低",
+        "chroma": "中",
+        "clarity": "清",
+        "contrast": "中"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#7A4B2B",
+            "name": "深棕"
+          },
+          {
+            "hex": "#8B3A2B",
+            "name": "砖红"
+          },
+          {
+            "hex": "#5C4033",
+            "name": "深苔"
+          },
+          {
+            "hex": "#9C5B3B",
+            "name": "巧克力"
+          },
+          {
+            "hex": "#6B4226",
+            "name": "深橄榄"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "酒棕"
+          },
+          {
+            "hex": "#8C5E3C",
+            "name": "暗金"
+          },
+          {
+            "hex": "#7A4A2A",
+            "name": "焦糖深"
+          }
+        ],
+        "clothingTip": "适合深棕、砖红、深苔绿等浓重暖色，浅淡色易显气色不足。",
+        "lipstick": [
+          {
+            "hex": "#7A2E2A",
+            "name": "深酒红"
+          },
+          {
+            "hex": "#6E2B25",
+            "name": "巧克力红"
+          },
+          {
+            "hex": "#8B3A2B",
+            "name": "棕红"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#FFD1DC",
+            "name": "浅粉"
+          },
+          {
+            "hex": "#BFD7F2",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "米白"
+          },
+          {
+            "hex": "#FFD400",
+            "name": "亮黄"
+          }
+        ]
+      },
+      "skinTone": "暖调偏柔/中性暖调",
+      "analysis": {
+        "skinBrightness": "中偏深",
+        "skinSaturation": "中等饱和",
+        "contrast": "中等对比",
+        "hairAndPupil": "深棕/巧克力棕发 / 深褐瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#C4A484",
+            "name": "卡其"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "驼色"
+          },
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#7A7B52",
+            "name": "橄榄"
+          },
+          {
+            "hex": "#6B6B6B",
+            "name": "深灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#7A4B2B",
+            "name": "深棕"
+          },
+          {
+            "hex": "#8B3A2B",
+            "name": "砖红"
+          },
+          {
+            "hex": "#5C4033",
+            "name": "深苔"
+          },
+          {
+            "hex": "#9C5B3B",
+            "name": "巧克力"
+          },
+          {
+            "hex": "#6B4226",
+            "name": "深橄榄"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#A0522D",
+            "name": "酒棕"
+          },
+          {
+            "hex": "#8C5E3C",
+            "name": "暗金"
+          },
+          {
+            "hex": "#7A4A2A",
+            "name": "焦糖深"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#7A4B2B",
+            "name": "深棕"
+          },
+          {
+            "hex": "#8B3A2B",
+            "name": "砖红"
+          },
+          {
+            "hex": "#5C4033",
+            "name": "深苔"
+          },
+          {
+            "hex": "#9C5B3B",
+            "name": "巧克力"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#6B4226",
+            "name": "深橄榄"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "酒棕"
+          },
+          {
+            "hex": "#8C5E3C",
+            "name": "暗金"
+          },
+          {
+            "hex": "#7A4A2A",
+            "name": "焦糖深"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#F3C6D6",
+            "name": "冷粉"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅灰蓝"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#5C4033",
+            "name": "深棕"
+          },
+          {
+            "hex": "#6B4226",
+            "name": "巧克力棕"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖栗棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "深金棕"
+          }
+        ],
+        "note": "深棕、巧克力棕、焦糖棕、暖栗棕、深金棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中明度、中低饱和的颜色能提亮肤色，显质感",
+        "colors": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调自然哑光，健康光泽",
+        "blush": "陶土 / 南瓜 / 焦糖橘",
+        "eyeshadow": "金棕 / 橄榄绿 / 暖灰 / 古铜",
+        "eyeliner": "深棕 / 橄榄棕",
+        "lipstick": "砖红 / 焦糖 / 南瓜 / 土橘"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "古铜"
+          },
+          {
+            "name": "玫瑰金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "暖珍珠"
+          },
+          {
+            "name": "琥珀"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷蓝、亮粉等高对比冷色容易显得气色不足、肤色发灰",
+        "colors": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "浓郁温暖",
+        "复古知性",
+        "沉稳高级",
+        "轻熟质感",
+        "大地气息"
+      ],
+      "styles": [
+        "复古港风",
+        "美拉德风",
+        "文艺通勤",
+        "大地质感风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#6B4226",
+          "name": "巧克力棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "light_autumn",
+      "name": "浅秋型",
+      "season": "秋",
+      "seasonEn": "Light Autumn",
+      "tagline": "柔和明亮的暖调轻熟",
+      "seasonFeature": "沙漠里的灰蓉花，柔暖的秋晨薄雾",
+      "colorAttributes": "暖 / 高明度 / 低彩度 / 浊",
+      "repColors": [
+        "浅焦糖棕",
+        "奶茶色",
+        "暖米白"
+      ],
+      "celebrities": "李圣经 / rose",
+      "description": "你是秋日清晨的柔光，暖而浅淡。低饱和暖色最显温柔，深色或冷色容易让你显得沉闷。",
+      "traits": {
+        "temp": "暖",
+        "value": "高",
+        "chroma": "低",
+        "clarity": "浊",
+        "contrast": "低"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          },
+          {
+            "hex": "#B9A78D",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#C8B8A8",
+            "name": "暖米"
+          },
+          {
+            "hex": "#BFAE98",
+            "name": "奶油棕"
+          },
+          {
+            "hex": "#D6C9B8",
+            "name": "杏灰"
+          },
+          {
+            "hex": "#C2B09A",
+            "name": "浅灰褐"
+          }
+        ],
+        "clothingTip": "适合米杏、奶茶、燕麦、浅驼等浅淡大地色，轻盈不压身。",
+        "lipstick": [
+          {
+            "hex": "#C89B7B",
+            "name": "奶茶橘"
+          },
+          {
+            "hex": "#B98C6B",
+            "name": "裸橘棕"
+          },
+          {
+            "hex": "#C9A58B",
+            "name": "杏色"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#2C3E50",
+            "name": "冷蓝"
+          },
+          {
+            "hex": "#000000",
+            "name": "正黑"
+          },
+          {
+            "hex": "#FF0F7B",
+            "name": "亮玫"
+          },
+          {
+            "hex": "#6A5ACD",
+            "name": "冷紫"
+          }
+        ]
+      },
+      "skinTone": "暖调偏柔/中性暖调",
+      "analysis": {
+        "skinBrightness": "偏高/高明度",
+        "skinSaturation": "低饱和",
+        "contrast": "低对比",
+        "hairAndPupil": "暖棕发色 / 深褐瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#C4A484",
+            "name": "卡其"
+          },
+          {
+            "hex": "#C2A06B",
+            "name": "驼色"
+          },
+          {
+            "hex": "#8B6B4F",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#7A7B52",
+            "name": "橄榄"
+          },
+          {
+            "hex": "#6B6B6B",
+            "name": "深灰"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          },
+          {
+            "hex": "#B9A78D",
+            "name": "浅驼"
+          },
+          {
+            "hex": "#C8B8A8",
+            "name": "暖米"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#BFAE98",
+            "name": "奶油棕"
+          },
+          {
+            "hex": "#D6C9B8",
+            "name": "杏灰"
+          },
+          {
+            "hex": "#C2B09A",
+            "name": "浅灰褐"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          },
+          {
+            "hex": "#B9A78D",
+            "name": "浅驼"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#C8B8A8",
+            "name": "暖米"
+          },
+          {
+            "hex": "#BFAE98",
+            "name": "奶油棕"
+          },
+          {
+            "hex": "#D6C9B8",
+            "name": "杏灰"
+          },
+          {
+            "hex": "#C2B09A",
+            "name": "浅灰褐"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#BFE3F0",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#F3C6D6",
+            "name": "冷粉"
+          },
+          {
+            "hex": "#B0A2BD",
+            "name": "雾紫"
+          },
+          {
+            "hex": "#C9D6DF",
+            "name": "浅灰蓝"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#5C4033",
+            "name": "深棕"
+          },
+          {
+            "hex": "#6B4226",
+            "name": "巧克力棕"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖栗棕"
+          },
+          {
+            "hex": "#A67C52",
+            "name": "深金棕"
+          }
+        ],
+        "note": "深棕、巧克力棕、焦糖棕、暖栗棕、深金棕"
+      },
+      "whiteningColors": {
+        "reason": "偏暖、中明度、中低饱和的颜色能提亮肤色，显质感",
+        "colors": [
+          {
+            "hex": "#F5F0E8",
+            "name": "米白"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "米杏"
+          },
+          {
+            "hex": "#D8C3A5",
+            "name": "奶茶"
+          },
+          {
+            "hex": "#C4B6A0",
+            "name": "燕麦"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "暖调自然哑光，健康光泽",
+        "blush": "陶土 / 南瓜 / 焦糖橘",
+        "eyeshadow": "金棕 / 橄榄绿 / 暖灰 / 古铜",
+        "eyeliner": "深棕 / 橄榄棕",
+        "lipstick": "砖红 / 焦糖 / 南瓜 / 土橘"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "金色"
+          },
+          {
+            "name": "古铜"
+          },
+          {
+            "name": "玫瑰金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "暖珍珠"
+          },
+          {
+            "name": "琥珀"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "冷蓝、亮粉等高对比冷色容易显得气色不足、肤色发灰",
+        "colors": [
+          {
+            "hex": "#0033A0",
+            "name": "宝蓝"
+          },
+          {
+            "hex": "#FFFFFF",
+            "name": "冷白"
+          },
+          {
+            "hex": "#FF4FA3",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#7FD3E8",
+            "name": "电光蓝"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "浓郁温暖",
+        "复古知性",
+        "沉稳高级",
+        "轻熟质感",
+        "大地气息"
+      ],
+      "styles": [
+        "复古港风",
+        "美拉德风",
+        "文艺通勤",
+        "大地质感风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#5C4033",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#6B4226",
+          "name": "巧克力棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深褐瞳"
+        }
+      ]
+    },
+    {
+      "id": "soft_winter",
+      "name": "柔冬型",
+      "season": "冬",
+      "seasonEn": "Soft Winter",
+      "tagline": "清冷灰柔的深冷气质",
+      "seasonFeature": "冬日晨曦中的雾霭",
+      "colorAttributes": "冷 / 中低明度 / 低彩度 / 清浊",
+      "repColors": [
+        "灰紫色",
+        "冷石英粉",
+        "蓝紫灰"
+      ],
+      "celebrities": "郑秀晶 / 徐睿知 / 金瑞亨",
+      "description": "你是冬日里的薄雾，冷而低饱和。带灰的深冷色最衬你的沉静，暖色或亮色会让你显得浮躁。",
+      "traits": {
+        "temp": "冷",
+        "value": "中低",
+        "chroma": "低",
+        "clarity": "清浊",
+        "contrast": "中高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#6B7B8C",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#7E6B8A",
+            "name": "烟紫"
+          },
+          {
+            "hex": "#5E6B7A",
+            "name": "深雾蓝"
+          },
+          {
+            "hex": "#8E7A8A",
+            "name": "藕紫灰"
+          },
+          {
+            "hex": "#6B5C6B",
+            "name": "深藕"
+          },
+          {
+            "hex": "#4F6270",
+            "name": "深青灰"
+          },
+          {
+            "hex": "#7A6B7D",
+            "name": "紫灰"
+          },
+          {
+            "hex": "#566573",
+            "name": "铅蓝"
+          }
+        ],
+        "clothingTip": "适合灰蓝、烟紫、深雾蓝等带灰冷色，保持中高对比。",
+        "lipstick": [
+          {
+            "hex": "#8A4F6A",
+            "name": "深玫瑰"
+          },
+          {
+            "hex": "#7A4F66",
+            "name": "烟紫红"
+          },
+          {
+            "hex": "#6B4C5A",
+            "name": "深豆沙"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E8732B",
+            "name": "暖橘"
+          },
+          {
+            "hex": "#F4B942",
+            "name": "金黄"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "米白"
+          },
+          {
+            "hex": "#7FB069",
+            "name": "暖绿"
+          }
+        ]
+      },
+      "skinTone": "冷调偏中性",
+      "analysis": {
+        "skinBrightness": "中偏深",
+        "skinSaturation": "低饱和",
+        "contrast": "中高对比",
+        "hairAndPupil": "自然黑/深棕黑发 / 黑褐瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1A1A1A",
+            "name": "正黑"
+          },
+          {
+            "hex": "#4A4A4A",
+            "name": "深灰"
+          },
+          {
+            "hex": "#1B2A4A",
+            "name": "藏青"
+          },
+          {
+            "hex": "#808080",
+            "name": "纯灰"
+          },
+          {
+            "hex": "#2C2C2C",
+            "name": "炭黑"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#6B7B8C",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#7E6B8A",
+            "name": "烟紫"
+          },
+          {
+            "hex": "#5E6B7A",
+            "name": "深雾蓝"
+          },
+          {
+            "hex": "#8E7A8A",
+            "name": "藕紫灰"
+          },
+          {
+            "hex": "#6B5C6B",
+            "name": "深藕"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#4F6270",
+            "name": "深青灰"
+          },
+          {
+            "hex": "#7A6B7D",
+            "name": "紫灰"
+          },
+          {
+            "hex": "#566573",
+            "name": "铅蓝"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#6B7B8C",
+            "name": "灰蓝"
+          },
+          {
+            "hex": "#7E6B8A",
+            "name": "烟紫"
+          },
+          {
+            "hex": "#5E6B7A",
+            "name": "深雾蓝"
+          },
+          {
+            "hex": "#8E7A8A",
+            "name": "藕紫灰"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#6B5C6B",
+            "name": "深藕"
+          },
+          {
+            "hex": "#4F6270",
+            "name": "深青灰"
+          },
+          {
+            "hex": "#7A6B7D",
+            "name": "紫灰"
+          },
+          {
+            "hex": "#566573",
+            "name": "铅蓝"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "暖米"
+          },
+          {
+            "hex": "#F0C9A0",
+            "name": "杏色"
+          },
+          {
+            "hex": "#D8C9A8",
+            "name": "浅卡其"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#0F0F0F",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#2A1F1F",
+            "name": "深棕"
+          },
+          {
+            "hex": "#1B1B2E",
+            "name": "冷黑茶"
+          },
+          {
+            "hex": "#0D1B2A",
+            "name": "黑蓝"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "深巧克力棕"
+          }
+        ],
+        "note": "自然黑、深棕、冷黑茶、黑蓝、深巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、高饱和/高对比的颜色能提亮肤色，显白净",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫罗兰"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，干净哑光或光泽均可",
+        "blush": "莓粉 / 玫红 / 冷调粉",
+        "eyeshadow": "冷灰 / 深紫 / 银灰 / 烟熏蓝",
+        "eyeliner": "浓黑 / 深灰 / 酒红",
+        "lipstick": "正红 / 蓝调红 / 玫红 / 莓果色"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "冷白钻"
+          },
+          {
+            "name": "黑银"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "土黄、暖棕、灰浊色容易让肤色发暗、显脏",
+        "colors": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "冷艳高级",
+        "鲜明利落",
+        "都市气场",
+        "冷感摩登",
+        "高对比"
+      ],
+      "styles": [
+        "都市极简风",
+        "冷感高级风",
+        "气场通勤风",
+        "摩登撞色风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#0F0F0F",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#2A1F1F",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "bright_winter",
+      "name": "亮冬型",
+      "season": "冬",
+      "seasonEn": "Bright Winter",
+      "tagline": "撞色高亮的冷调精灵",
+      "seasonFeature": "1月 张灯结彩的圣诞节",
+      "colorAttributes": "冷 / 中明度 / 中高彩度 / 清",
+      "repColors": [
+        "克莱因蓝",
+        "孔雀绿",
+        "玫红色"
+      ],
+      "celebrities": "林智妍 / Hanni / 安宥真",
+      "description": "你是冬季里最跳跃的冷色，冷而高饱和。荧光冷色与撞色让你活力四射，大地浊色会让你黯淡。",
+      "traits": {
+        "temp": "冷",
+        "value": "中",
+        "chroma": "中高",
+        "clarity": "清",
+        "contrast": "中高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#FF0F7B",
+            "name": "亮玫"
+          },
+          {
+            "hex": "#00E5FF",
+            "name": "电青"
+          },
+          {
+            "hex": "#7C4DFF",
+            "name": "紫"
+          },
+          {
+            "hex": "#FF2D55",
+            "name": "亮橘红"
+          },
+          {
+            "hex": "#00B0FF",
+            "name": "亮蓝"
+          },
+          {
+            "hex": "#FF6F91",
+            "name": "荧光粉"
+          },
+          {
+            "hex": "#B400FF",
+            "name": "亮紫"
+          },
+          {
+            "hex": "#18FFFF",
+            "name": "亮青"
+          }
+        ],
+        "clothingTip": "适合高饱和的冷色与撞色搭配，越鲜明越有记忆点。",
+        "lipstick": [
+          {
+            "hex": "#FF0F7B",
+            "name": "亮玫红"
+          },
+          {
+            "hex": "#FF2D55",
+            "name": "亮橘红"
+          },
+          {
+            "hex": "#E91E9E",
+            "name": "亮莓"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#6E5B4F",
+            "name": "灰褐"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "米白"
+          },
+          {
+            "hex": "#C19A4E",
+            "name": "土黄"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖棕"
+          }
+        ]
+      },
+      "skinTone": "冷调鲜明",
+      "analysis": {
+        "skinBrightness": "中等",
+        "skinSaturation": "中饱和",
+        "contrast": "中高对比",
+        "hairAndPupil": "深棕/自然黑发 / 深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1A1A1A",
+            "name": "正黑"
+          },
+          {
+            "hex": "#4A4A4A",
+            "name": "深灰"
+          },
+          {
+            "hex": "#1B2A4A",
+            "name": "藏青"
+          },
+          {
+            "hex": "#808080",
+            "name": "纯灰"
+          },
+          {
+            "hex": "#2C2C2C",
+            "name": "炭黑"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#FF0F7B",
+            "name": "亮玫"
+          },
+          {
+            "hex": "#00E5FF",
+            "name": "电青"
+          },
+          {
+            "hex": "#7C4DFF",
+            "name": "紫"
+          },
+          {
+            "hex": "#FF2D55",
+            "name": "亮橘红"
+          },
+          {
+            "hex": "#00B0FF",
+            "name": "亮蓝"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#FF6F91",
+            "name": "荧光粉"
+          },
+          {
+            "hex": "#B400FF",
+            "name": "亮紫"
+          },
+          {
+            "hex": "#18FFFF",
+            "name": "亮青"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#FF0F7B",
+            "name": "亮玫"
+          },
+          {
+            "hex": "#00E5FF",
+            "name": "电青"
+          },
+          {
+            "hex": "#7C4DFF",
+            "name": "紫"
+          },
+          {
+            "hex": "#FF2D55",
+            "name": "亮橘红"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#00B0FF",
+            "name": "亮蓝"
+          },
+          {
+            "hex": "#FF6F91",
+            "name": "荧光粉"
+          },
+          {
+            "hex": "#B400FF",
+            "name": "亮紫"
+          },
+          {
+            "hex": "#18FFFF",
+            "name": "亮青"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "暖米"
+          },
+          {
+            "hex": "#F0C9A0",
+            "name": "杏色"
+          },
+          {
+            "hex": "#D8C9A8",
+            "name": "浅卡其"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#0F0F0F",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#2A1F1F",
+            "name": "深棕"
+          },
+          {
+            "hex": "#1B1B2E",
+            "name": "冷黑茶"
+          },
+          {
+            "hex": "#0D1B2A",
+            "name": "黑蓝"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "深巧克力棕"
+          }
+        ],
+        "note": "自然黑、深棕、冷黑茶、黑蓝、深巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、高饱和/高对比的颜色能提亮肤色，显白净",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫罗兰"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，干净哑光或光泽均可",
+        "blush": "莓粉 / 玫红 / 冷调粉",
+        "eyeshadow": "冷灰 / 深紫 / 银灰 / 烟熏蓝",
+        "eyeliner": "浓黑 / 深灰 / 酒红",
+        "lipstick": "正红 / 蓝调红 / 玫红 / 莓果色"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "冷白钻"
+          },
+          {
+            "name": "黑银"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "土黄、暖棕、灰浊色容易让肤色发暗、显脏",
+        "colors": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "冷艳高级",
+        "鲜明利落",
+        "都市气场",
+        "冷感摩登",
+        "高对比"
+      ],
+      "styles": [
+        "都市极简风",
+        "冷感高级风",
+        "气场通勤风",
+        "摩登撞色风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#0F0F0F",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#2A1F1F",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "deep_winter",
+      "name": "深冬型",
+      "season": "冬",
+      "seasonEn": "Deep Winter",
+      "tagline": "深邃浓烈的暗冷调",
+      "seasonFeature": "12月 冰雪覆盖的山脉与岩石灰",
+      "colorAttributes": "冷 / 中低彩度 / 低明度 / 清",
+      "repColors": [
+        "深藏青蓝",
+        "墨绿色",
+        "勃艮第酒红"
+      ],
+      "celebrities": "金智秀 / 李冰冰 / 巩俐",
+      "description": "你拥有冬季最深的浓度，深而冷。深酒红、墨蓝让你气场十足，浅淡色会让你显得没精神。",
+      "traits": {
+        "temp": "冷",
+        "value": "低",
+        "chroma": "中低",
+        "clarity": "清",
+        "contrast": "中高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#1A1A40",
+            "name": "深蓝"
+          },
+          {
+            "hex": "#5C1349",
+            "name": "酒红"
+          },
+          {
+            "hex": "#0F3057",
+            "name": "墨蓝"
+          },
+          {
+            "hex": "#4B2E57",
+            "name": "深紫"
+          },
+          {
+            "hex": "#7B1E3B",
+            "name": "黑莓"
+          },
+          {
+            "hex": "#143642",
+            "name": "深青"
+          },
+          {
+            "hex": "#5C1349",
+            "name": "暗玫"
+          },
+          {
+            "hex": "#1B3B2B",
+            "name": "墨绿深"
+          }
+        ],
+        "clothingTip": "适合深酒红、墨蓝、深紫等浓重冷色，浅淡色易显气色不足。",
+        "lipstick": [
+          {
+            "hex": "#7A123C",
+            "name": "深酒红"
+          },
+          {
+            "hex": "#6B0F3B",
+            "name": "暗红"
+          },
+          {
+            "hex": "#8E1B5A",
+            "name": "紫红"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#FFD1DC",
+            "name": "浅粉"
+          },
+          {
+            "hex": "#FBF3E4",
+            "name": "米白"
+          },
+          {
+            "hex": "#E8732B",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#BFD7F2",
+            "name": "冰蓝浅"
+          }
+        ]
+      },
+      "skinTone": "冷调偏中性",
+      "analysis": {
+        "skinBrightness": "偏低/低明度",
+        "skinSaturation": "低-中低饱和",
+        "contrast": "中高对比",
+        "hairAndPupil": "自然黑/深棕黑发 / 黑褐瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1A1A1A",
+            "name": "正黑"
+          },
+          {
+            "hex": "#4A4A4A",
+            "name": "深灰"
+          },
+          {
+            "hex": "#1B2A4A",
+            "name": "藏青"
+          },
+          {
+            "hex": "#808080",
+            "name": "纯灰"
+          },
+          {
+            "hex": "#2C2C2C",
+            "name": "炭黑"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#1A1A40",
+            "name": "深蓝"
+          },
+          {
+            "hex": "#5C1349",
+            "name": "酒红"
+          },
+          {
+            "hex": "#0F3057",
+            "name": "墨蓝"
+          },
+          {
+            "hex": "#4B2E57",
+            "name": "深紫"
+          },
+          {
+            "hex": "#7B1E3B",
+            "name": "黑莓"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#143642",
+            "name": "深青"
+          },
+          {
+            "hex": "#1B3B2B",
+            "name": "墨绿深"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#1A1A40",
+            "name": "深蓝"
+          },
+          {
+            "hex": "#5C1349",
+            "name": "酒红"
+          },
+          {
+            "hex": "#0F3057",
+            "name": "墨蓝"
+          },
+          {
+            "hex": "#4B2E57",
+            "name": "深紫"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#7B1E3B",
+            "name": "黑莓"
+          },
+          {
+            "hex": "#143642",
+            "name": "深青"
+          },
+          {
+            "hex": "#1B3B2B",
+            "name": "墨绿深"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "暖米"
+          },
+          {
+            "hex": "#F0C9A0",
+            "name": "杏色"
+          },
+          {
+            "hex": "#D8C9A8",
+            "name": "浅卡其"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#0F0F0F",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#2A1F1F",
+            "name": "深棕"
+          },
+          {
+            "hex": "#1B1B2E",
+            "name": "冷黑茶"
+          },
+          {
+            "hex": "#0D1B2A",
+            "name": "黑蓝"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "深巧克力棕"
+          }
+        ],
+        "note": "自然黑、深棕、冷黑茶、黑蓝、深巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、高饱和/高对比的颜色能提亮肤色，显白净",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫罗兰"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，干净哑光或光泽均可",
+        "blush": "莓粉 / 玫红 / 冷调粉",
+        "eyeshadow": "冷灰 / 深紫 / 银灰 / 烟熏蓝",
+        "eyeliner": "浓黑 / 深灰 / 酒红",
+        "lipstick": "正红 / 蓝调红 / 玫红 / 莓果色"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "冷白钻"
+          },
+          {
+            "name": "黑银"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "土黄、暖棕、灰浊色容易让肤色发暗、显脏",
+        "colors": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "冷艳高级",
+        "鲜明利落",
+        "都市气场",
+        "冷感摩登",
+        "高对比"
+      ],
+      "styles": [
+        "都市极简风",
+        "冷感高级风",
+        "气场通勤风",
+        "摩登撞色风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#0F0F0F",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#2A1F1F",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    },
+    {
+      "id": "clear_winter",
+      "name": "净冬型",
+      "season": "冬",
+      "seasonEn": "Clear Winter",
+      "tagline": "清澈冷艳的高对比美人",
+      "seasonFeature": "2月 雪中盛开的花",
+      "colorAttributes": "冷 / 高明度 / 高彩度 / 清",
+      "repColors": [
+        "玫红色",
+        "亮洋紫",
+        "宝石蓝"
+      ],
+      "celebrities": "景甜 / 张天爱 / Karina",
+      "description": "你是冬季里最明净的冷色，冷而鲜明。清透饱和的冷色让你冷艳夺目，灰浊暖色最显脏。",
+      "traits": {
+        "temp": "冷",
+        "value": "高",
+        "chroma": "高",
+        "clarity": "清",
+        "contrast": "高"
+      },
+      "palette": {
+        "best": [
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#2D9CDB",
+            "name": "净青"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫"
+          },
+          {
+            "hex": "#00A8A8",
+            "name": "蓝绿"
+          },
+          {
+            "hex": "#E84393",
+            "name": "亮莓"
+          },
+          {
+            "hex": "#2980B9",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#6C5CE7",
+            "name": "紫罗兰"
+          }
+        ],
+        "clothingTip": "适合净蓝、冷玫、蓝绿等清澈冷色，对比强烈更出彩。",
+        "lipstick": [
+          {
+            "hex": "#E0245E",
+            "name": "正红"
+          },
+          {
+            "hex": "#D62598",
+            "name": "蓝调红"
+          },
+          {
+            "hex": "#C01E5A",
+            "name": "莓红"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E8732B",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#C19A4E",
+            "name": "土黄"
+          },
+          {
+            "hex": "#8C6239",
+            "name": "暖棕"
+          },
+          {
+            "hex": "#FCE5A3",
+            "name": "奶油黄"
+          }
+        ]
+      },
+      "skinTone": "冷调鲜明",
+      "analysis": {
+        "skinBrightness": "偏高/高明度",
+        "skinSaturation": "高饱和",
+        "contrast": "高对比",
+        "hairAndPupil": "深棕/自然黑发 / 深棕瞳"
+      },
+      "colorRange": {
+        "basics": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1A1A1A",
+            "name": "正黑"
+          },
+          {
+            "hex": "#4A4A4A",
+            "name": "深灰"
+          },
+          {
+            "hex": "#1B2A4A",
+            "name": "藏青"
+          },
+          {
+            "hex": "#808080",
+            "name": "纯灰"
+          },
+          {
+            "hex": "#2C2C2C",
+            "name": "炭黑"
+          }
+        ],
+        "main": [
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#2D9CDB",
+            "name": "净青"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫"
+          },
+          {
+            "hex": "#00A8A8",
+            "name": "蓝绿"
+          }
+        ],
+        "accents": [
+          {
+            "hex": "#E84393",
+            "name": "亮莓"
+          },
+          {
+            "hex": "#2980B9",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#6C5CE7",
+            "name": "紫罗兰"
+          }
+        ]
+      },
+      "clothingColors": {
+        "priority": [
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#2D9CDB",
+            "name": "净青"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫"
+          }
+        ],
+        "try": [
+          {
+            "hex": "#00A8A8",
+            "name": "蓝绿"
+          },
+          {
+            "hex": "#E84393",
+            "name": "亮莓"
+          },
+          {
+            "hex": "#2980B9",
+            "name": "冰蓝"
+          },
+          {
+            "hex": "#6C5CE7",
+            "name": "紫罗兰"
+          }
+        ],
+        "cautious": [
+          {
+            "hex": "#C2A06B",
+            "name": "暖驼"
+          },
+          {
+            "hex": "#E8D5B7",
+            "name": "暖米"
+          },
+          {
+            "hex": "#F0C9A0",
+            "name": "杏色"
+          },
+          {
+            "hex": "#D8C9A8",
+            "name": "浅卡其"
+          }
+        ],
+        "avoid": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "hairColor": {
+        "colors": [
+          {
+            "hex": "#0F0F0F",
+            "name": "自然黑"
+          },
+          {
+            "hex": "#2A1F1F",
+            "name": "深棕"
+          },
+          {
+            "hex": "#1B1B2E",
+            "name": "冷黑茶"
+          },
+          {
+            "hex": "#0D1B2A",
+            "name": "黑蓝"
+          },
+          {
+            "hex": "#3A2E28",
+            "name": "深巧克力棕"
+          }
+        ],
+        "note": "自然黑、深棕、冷黑茶、黑蓝、深巧克力棕"
+      },
+      "whiteningColors": {
+        "reason": "偏冷、高饱和/高对比的颜色能提亮肤色，显白净",
+        "colors": [
+          {
+            "hex": "#FFFFFF",
+            "name": "正白"
+          },
+          {
+            "hex": "#1F6F8B",
+            "name": "净蓝"
+          },
+          {
+            "hex": "#D6336C",
+            "name": "冷玫红"
+          },
+          {
+            "hex": "#9B59B6",
+            "name": "紫罗兰"
+          }
+        ]
+      },
+      "makeup": {
+        "base": "冷调/中性调，干净哑光或光泽均可",
+        "blush": "莓粉 / 玫红 / 冷调粉",
+        "eyeshadow": "冷灰 / 深紫 / 银灰 / 烟熏蓝",
+        "eyeliner": "浓黑 / 深灰 / 酒红",
+        "lipstick": "正红 / 蓝调红 / 玫红 / 莓果色"
+      },
+      "metals": {
+        "priority": [
+          {
+            "name": "银色"
+          },
+          {
+            "name": "白金"
+          },
+          {
+            "name": "铂金"
+          }
+        ],
+        "optional": [
+          {
+            "name": "冷白钻"
+          },
+          {
+            "name": "黑银"
+          }
+        ]
+      },
+      "dirtyColors": {
+        "reason": "土黄、暖棕、灰浊色容易让肤色发暗、显脏",
+        "colors": [
+          {
+            "hex": "#E08A3C",
+            "name": "暖橙"
+          },
+          {
+            "hex": "#A0522D",
+            "name": "焦糖棕"
+          },
+          {
+            "hex": "#D6B03C",
+            "name": "芥末黄"
+          },
+          {
+            "hex": "#A63A2E",
+            "name": "砖红"
+          }
+        ]
+      },
+      "styleKeywords": [
+        "冷艳高级",
+        "鲜明利落",
+        "都市气场",
+        "冷感摩登",
+        "高对比"
+      ],
+      "styles": [
+        "都市极简风",
+        "冷感高级风",
+        "气场通勤风",
+        "摩登撞色风"
+      ],
+      "hairPupilColors": [
+        {
+          "hex": "#0F0F0F",
+          "name": "自然黑发"
+        },
+        {
+          "hex": "#2A1F1F",
+          "name": "深棕发"
+        },
+        {
+          "hex": "#3A2E28",
+          "name": "深棕瞳"
+        }
+      ]
+    }
+  ]
+}
