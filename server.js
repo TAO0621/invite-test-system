@@ -43,6 +43,9 @@ function ensureConfig() {
   const loaded = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf8'));
   // 环境变量 ADMIN_PASS 可覆盖（部署时避免在代码仓库里写死密码）
   if (process.env.ADMIN_PASS) loaded.adminPass = process.env.ADMIN_PASS;
+  // 始终以运行期 PORT 为准：Railway 每次部署都会换 PORT，若用 config.json 缓存的旧端口，
+  // 应用会监听在旧端口、Railway 代理却打到新端口，导致 502 / 打不开
+  if (process.env.PORT) loaded.port = parseInt(process.env.PORT, 10);
   return loaded;
 }
 // 数据目录可能由 DATA_DIR 指定（如持久卷 /data），确保它存在再写配置
@@ -278,9 +281,9 @@ const server = http.createServer(async (req, res) => {
 });
 
 if (require.main === module) {
-  server.listen(CONFIG.port, () => {
-    console.log(`邀请码测试系统已启动： http://localhost:${CONFIG.port}`);
-    console.log(`管理后台： http://localhost:${CONFIG.port}/admin  （默认管理员密码 admin123!，请尽快修改 config.json）`);
+  server.listen(CONFIG.port, '0.0.0.0', () => {
+    console.log(`邀请码测试系统已启动： http://0.0.0.0:${CONFIG.port}`);
+    console.log(`管理后台： http://0.0.0.0:${CONFIG.port}/admin  （默认管理员密码 admin123!，请尽快修改 config.json）`);
   });
 }
 
